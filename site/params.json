@@ -1,0 +1,43 @@
+{
+ "trained_on": 40,
+ "active": false,
+ "bias": 0.0,
+ "weights": {
+  "edge": 0.0,
+  "stats_edge": 0.0,
+  "hit_rate": 0.0,
+  "role_change": 0.0,
+  "early_season": 0.0,
+  "listed": 0.0,
+  "f_home": 0.0,
+  "f_rest": 0.0,
+  "f_defense": 0.0,
+  "f_pace": 0.0,
+  "f_vegas": 0.0,
+  "f_position": 0.0,
+  "f_opp_injuries": 0.0,
+  "f_h2h": 0.0,
+  "f_teammates": 0.0,
+  "f_blowout": 0.0
+ },
+ "reason": "Needs 500 graded picks before learning; has 40.",
+ "updated": "2026-10-21T22:40:19+00:00",
+ "features": [
+  "edge",
+  "stats_edge",
+  "hit_rate",
+  "role_change",
+  "early_season",
+  "listed",
+  "f_home",
+  "f_rest",
+  "f_defense",
+  "f_pace",
+  "f_vegas",
+  "f_position",
+  "f_opp_injuries",
+  "f_h2h",
+  "f_teammates",
+  "f_blowout"
+ ]
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>hoopr</title>
+<meta name="description" content="NBA player points over/under predictor">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- page -->
+<main>
+  <header>
+    <h1>hoop<span>r</span></h1>
+    <p>NBA points over/under predictor. Type a player, optionally a line, and hit Enter.
+       Leave the line blank to use the sportsbook's posted line.</p>
+    <div class="stamp" id="stamp"></div>
+  </header>
+  <form id="f">
+    <input id="name" placeholder="Player name, e.g. Jalen Brunson" autocomplete="off" aria-label="Player name">
+    <input id="line" placeholder="Line (optional)" inputmode="decimal" autocomplete="off" aria-label="Points line">
+    <button id="go">Predict</button>
+  </form>
+  <div id="out"></div>
+  <section class="board" id="board" hidden>
+    <h2>Top posted lines per game. Tap a player to run it</h2>
+    <div class="games-row" id="board-games"></div>
+  </section>
+  <section id="record" hidden></section>
+  <footer>Data from ESPN: stats, injuries, Vegas odds and DraftKings player lines. A statistical model, not a guarantee. Bet responsibly.</footer>
+</main>
+<!-- /page -->
+<script type="module">
+import { live } from "./hoopr.js";
+import { mount } from "./ui.js";
+
+document.getElementById("stamp").textContent = "Live data, pulled when you hit Predict.";
+const get = path => fetch(path, { cache: "no-cache" }).then(r => (r.ok ? r.json() : null)).catch(() => null);
+const [params, record] = await Promise.all([get("params.json"), get("record.json")]);
+mount({ source: live, params: params || {}, record });
+document.getElementById("name").focus();
+</script>
+</body>
+</html>

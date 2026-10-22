@@ -1,0 +1,134 @@
+{
+ "updated": "2026-10-21T22:40:19+00:00",
+ "break_even": 0.5238,
+ "since": "2026-10-20",
+ "overall": {
+  "w": 21,
+  "l": 19,
+  "p": 0,
+  "win_pct": 0.525,
+  "units": 0.09
+ },
+ "base_model": {
+  "w": 21,
+  "l": 19,
+  "p": 0,
+  "win_pct": 0.525,
+  "units": 0.09
+ },
+ "by_confidence": {
+  "Coin flip": {
+   "w": 3,
+   "l": 5,
+   "p": 0,
+   "win_pct": 0.375,
+   "units": -2.27
+  },
+  "Lean": {
+   "w": 4,
+   "l": 5,
+   "p": 0,
+   "win_pct": 0.4444,
+   "units": -1.36
+  },
+  "Moderate": {
+   "w": 11,
+   "l": 6,
+   "p": 0,
+   "win_pct": 0.6471,
+   "units": 4.0
+  },
+  "Strong": {
+   "w": 3,
+   "l": 3,
+   "p": 0,
+   "win_pct": 0.5,
+   "units": -0.27
+  }
+ },
+ "by_side": {
+  "OVER": {
+   "w": 11,
+   "l": 12,
+   "p": 0,
+   "win_pct": 0.4783,
+   "units": -2.0
+  },
+  "UNDER": {
+   "w": 10,
+   "l": 7,
+   "p": 0,
+   "win_pct": 0.5882,
+   "units": 2.09
+  }
+ },
+ "by_day": [
+  {
+   "day": "2026-10-20",
+   "w": 21,
+   "l": 19,
+   "p": 0,
+   "win_pct": 0.525,
+   "units": 0.09
+  }
+ ],
+ "calibration": [
+  {
+   "lo": 0.5,
+   "hi": 0.53,
+   "n": 8,
+   "predicted": 0.5137,
+   "actual": 0.375
+  },
+  {
+   "lo": 0.53,
+   "hi": 0.57,
+   "n": 9,
+   "predicted": 0.5477,
+   "actual": 0.4444
+  },
+  {
+   "lo": 0.57,
+   "hi": 0.62,
+   "n": 11,
+   "predicted": 0.5914,
+   "actual": 0.7273
+  },
+  {
+   "lo": 0.62,
+   "hi": 1.0,
+   "n": 12,
+   "predicted": 0.6891,
+   "actual": 0.5
+  }
+ ],
+ "pending": 152,
+ "learning": {
+  "active": false,
+  "trained_on": 40,
+  "holdout": null,
+  "base_log_loss": null,
+  "learned_log_loss": null,
+  "reason": "Needs 500 graded picks before learning; has 40.",
+  "weights": {
+   "edge": 0.0,
+   "stats_edge": 0.0,
+   "hit_rate": 0.0,
+   "role_change": 0.0,
+   "early_season": 0.0,
+   "listed": 0.0,
+   "f_home": 0.0,
+   "f_rest": 0.0,
+   "f_defense": 0.0,
+   "f_pace": 0.0,
+   "f_vegas": 0.0,
+   "f_position": 0.0,
+   "f_opp_injuries": 0.0,
+   "f_h2h": 0.0,
+   "f_teammates": 0.0,
+   "f_blowout": 0.0
+  },
+  "bias": 0.0,
+  "updated": "2026-10-21T22:40:19+00:00"
+ }
+}

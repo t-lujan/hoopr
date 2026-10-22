@@ -1,0 +1,55 @@
+# The bot's learning loop: record picks before tip-off, grade them after the
+# games, refit the learning layer, and commit the results (which redeploys the site).
+name: Record, grade and learn
+
+on:
+  schedule:
+    - cron: "40 15 * * *"   # 11:40 ET: picks for early tip-offs
+    - cron: "40 21 * * *"   # 17:40 ET: picks for the evening slate (latest lines before tip-off)
+    - cron: "10 10 * * *"   # 06:10 ET: grade last night's games, then learn
+  workflow_dispatch:
+    inputs:
+      step:
+        description: "record, grade or learn (grade also runs learn)"
+        default: "record"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: learning-loop
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pick the step
+        id: step
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "step=${{ inputs.step }}" >> "$GITHUB_OUTPUT";
+          elif [ "${{ github.event.schedule }}" = "10 10 * * *" ]; then echo "step=grade" >> "$GITHUB_OUTPUT";
+          else echo "step=record" >> "$GITHUB_OUTPUT"; fi
+      - name: Record picks
+        if: steps.step.outputs.step == 'record'
+        run: python3 tools/daily.py record
+      - name: Grade picks
+        if: steps.step.outputs.step == 'grade'
+        run: python3 tools/daily.py grade
+      - name: Learn
+        if: steps.step.outputs.step == 'grade' || steps.step.outputs.step == 'learn'
+        run: python3 tools/daily.py learn
+      - name: Commit results
+        run: |
+          git config user.name "hoopr-bot"
+          git config user.email "hoopr-bot@users.noreply.github.com"
+          git add data site/params.json site/record.json
+          if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+          git commit -m "Bot: ${{ steps.step.outputs.step }} $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase && git push && exit 0; sleep 5; done
+          exit 1
