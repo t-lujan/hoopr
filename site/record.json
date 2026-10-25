@@ -1,65 +1,65 @@
 {
- "updated": "2026-10-24T13:58:35+00:00",
+ "updated": "2026-10-25T14:19:29+00:00",
  "break_even": 0.5238,
  "since": "2026-10-20",
  "overall": {
-  "w": 195,
-  "l": 181,
+  "w": 237,
+  "l": 222,
   "p": 0,
-  "win_pct": 0.5186,
-  "units": -3.73
+  "win_pct": 0.5163,
+  "units": -6.55
  },
  "base_model": {
-  "w": 195,
-  "l": 181,
+  "w": 237,
+  "l": 222,
   "p": 0,
-  "win_pct": 0.5186,
-  "units": -3.73
+  "win_pct": 0.5163,
+  "units": -6.55
  },
  "by_confidence": {
   "Coin flip": {
-   "w": 38,
-   "l": 39,
+   "w": 48,
+   "l": 51,
    "p": 0,
-   "win_pct": 0.4935,
-   "units": -4.45
+   "win_pct": 0.4848,
+   "units": -7.36
   },
   "Lean": {
-   "w": 47,
-   "l": 54,
+   "w": 59,
+   "l": 62,
    "p": 0,
-   "win_pct": 0.4653,
-   "units": -11.27
+   "win_pct": 0.4876,
+   "units": -8.36
   },
   "Moderate": {
-   "w": 92,
-   "l": 63,
+   "w": 110,
+   "l": 75,
    "p": 0,
-   "win_pct": 0.5935,
-   "units": 20.64
+   "win_pct": 0.5946,
+   "units": 25.0
   },
   "Strong": {
-   "w": 18,
-   "l": 25,
+   "w": 20,
+   "l": 34,
    "p": 0,
-   "win_pct": 0.4186,
-   "units": -8.64
+   "win_pct": 0.3704,
+   "units": -15.82
   }
  },
  "by_side": {
   "OVER": {
-   "w": 106,
-   "l": 114,
+   "w": 129,
+   "l": 132,
    "p": 0,
-   "win_pct": 0.4818,
-   "units": -17.64
+   "win_pct": 0.4943,
+   "units": -14.73
   },
   "UNDER": {
-   "w": 89,
-   "l": 67,
+   "w": 108,
+   "l": 90,
    "p": 0,
-   "win_pct": 0.5705,
-   "units": 13.91
+   "win_pct": 0.5455,
+   "units": 8.18
   }
  },
  "by_day": [
@@ -94,46 +94,54 @@
    "p": 0,
    "win_pct": 0.4663,
    "units": -17.91
+  },
+  {
+   "day": "2026-10-24",
+   "w": 42,
+   "l": 41,
+   "p": 0,
+   "win_pct": 0.506,
+   "units": -2.82
   }
  ],
  "calibration": [
   {
    "lo": 0.5,
    "hi": 0.53,
-   "n": 75,
+   "n": 96,
    "predicted": 0.5153,
-   "actual": 0.4933
+   "actual": 0.4792
   },
   {
    "lo": 0.53,
    "hi": 0.57,
-   "n": 102,
-   "predicted": 0.5503,
-   "actual": 0.4706
+   "n": 123,
+   "predicted": 0.5502,
+   "actual": 0.4959
   },
   {
    "lo": 0.57,
    "hi": 0.62,
-   "n": 87,
-   "predicted": 0.5907,
-   "actual": 0.5862
+   "n": 107,
+   "predicted": 0.591,
+   "actual": 0.5981
   },
   {
    "lo": 0.62,
    "hi": 1.0,
-   "n": 112,
-   "predicted": 0.68,
-   "actual": 0.5268
+   "n": 133,
+   "predicted": 0.6817,
+   "actual": 0.4962
   }
  ],
  "pending": 0,
  "learning": {
   "active": false,
-  "trained_on": 376,
+  "trained_on": 459,
   "holdout": null,
   "base_log_loss": null,
   "learned_log_loss": null,
-  "reason": "Needs 500 graded picks before learning; has 376.",
+  "reason": "Needs 500 graded picks before learning; has 459.",
   "weights": {
    "edge": 0.0,
    "stats_edge": 0.0,
@@ -153,6 +161,6 @@
    "f_blowout": 0.0
   },
   "bias": 0.0,
-  "updated": "2026-10-24T13:58:35+00:00"
+  "updated": "2026-10-25T14:19:29+00:00"
  }
 }

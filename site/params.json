@@ -1,5 +1,5 @@
 {
- "trained_on": 376,
+ "trained_on": 459,
  "active": false,
  "bias": 0.0,
  "weights": {
@@ -20,8 +20,8 @@
   "f_teammates": 0.0,
   "f_blowout": 0.0
  },
- "reason": "Needs 500 graded picks before learning; has 376.",
- "updated": "2026-10-24T13:58:35+00:00",
+ "reason": "Needs 500 graded picks before learning; has 459.",
+ "updated": "2026-10-25T14:19:29+00:00",
  "features": [
   "edge",
   "stats_edge",
