@@ -1,5 +1,5 @@
 {
- "trained_on": 459,
+ "trained_on": 538,
  "active": false,
  "bias": 0.0,
  "weights": {
@@ -20,8 +20,11 @@
   "f_teammates": 0.0,
   "f_blowout": 0.0
  },
- "reason": "Needs 500 graded picks before learning; has 459.",
- "updated": "2026-10-25T14:19:29+00:00",
+ "holdout": 108,
+ "base_log_loss": 0.73077,
+ "learned_log_loss": 0.73295,
+ "reason": "Learned weights didn't clearly beat the base model on the newest 108 picks, so they stay off.",
+ "updated": "2026-10-26T16:45:41+00:00",
  "features": [
   "edge",
   "stats_edge",

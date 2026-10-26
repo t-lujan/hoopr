@@ -45,7 +45,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 17.0,
+   "min": 29.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909861|4066457",
@@ -93,7 +100,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 29.0,
+   "min": 36.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909861|4683766",
@@ -141,7 +155,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 6.0,
+   "min": 13.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909861|4277961",
@@ -189,7 +210,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 20.0,
+   "min": 33.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909861|4397077",
@@ -237,7 +265,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 19.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909861|4433627",
@@ -285,7 +320,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 24.0,
+   "min": 33.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909861|4066336",
@@ -333,7 +375,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 28.0,
+   "min": 38.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909861|3945274",
@@ -381,7 +430,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 52.0,
+   "min": 38.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909861|3907498",
@@ -429,7 +485,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 26.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909861|4397014",
@@ -477,7 +540,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 3.0,
+   "min": 20.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909861|4278580",
@@ -525,7 +595,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 21.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909861|4433136",
@@ -573,7 +650,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 2.0,
+   "min": 28.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909861|4433137",
@@ -621,7 +705,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 30.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909862|4396909",
@@ -669,7 +760,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 19.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909862|4395712",
@@ -717,7 +815,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 14.0,
+   "min": 30.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909862|4432194",
@@ -765,7 +870,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 16.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909862|5175643",
@@ -813,7 +925,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 3.0,
+   "min": 19.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909862|4017837",
@@ -861,7 +980,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 2.0,
+   "min": 7.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909862|3064514",
@@ -909,7 +1035,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 24.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909862|3133603",
@@ -957,7 +1090,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 14.0,
+   "min": 20.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909862|4702177",
@@ -1005,7 +1145,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 23.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909862|4278104",
@@ -1053,7 +1200,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 21.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909862|4278355",
@@ -1101,7 +1255,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 16.0,
+   "min": 20.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909862|3149673",
@@ -1149,7 +1310,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 21.0,
+   "min": 26.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909862|4396993",
@@ -1197,7 +1365,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 24.0,
+   "min": 31.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909865|4900671",
@@ -1245,7 +1420,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 18.0,
+   "min": 28.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|4712849",
@@ -1293,7 +1475,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 18.0,
+   "min": 26.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909864|4594268",
@@ -1341,7 +1530,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 26.0,
+   "min": 28.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909864|4397002",
@@ -1389,7 +1585,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 23.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909865|3448",
@@ -1437,7 +1640,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 23.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909865|4683692",
@@ -1485,7 +1695,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 4.0,
+   "min": 6.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909865|4433255",
@@ -1533,7 +1750,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 31.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909864|5093267",
@@ -1581,7 +1805,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 3.0,
+   "min": 19.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909865|4396907",
@@ -1629,7 +1860,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 16.0,
+   "min": 36.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909865|3936099",
@@ -1677,7 +1915,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 30.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|4066320",
@@ -1725,7 +1970,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 22.0,
+   "min": 35.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|4566434",
@@ -1773,7 +2025,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 23.0,
+   "min": 37.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909864|4395724",
@@ -1821,7 +2080,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 19.0,
+   "min": 28.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909865|4222252",
@@ -1869,7 +2135,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 12.0,
+   "min": 27.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909865|4432170",
@@ -1917,7 +2190,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 24.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909864|4431671",
@@ -1965,7 +2245,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 14.0,
+   "min": 31.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909864|3134908",
@@ -2013,7 +2300,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 0.0,
+   "min": 19.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909863|3934672",
@@ -2061,7 +2355,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 28.0,
+   "min": 32.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|4432165",
@@ -2109,7 +2410,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 4.0,
+   "min": 34.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909865|4593803",
@@ -2157,7 +2465,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 32.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909864|4432241",
@@ -2205,7 +2520,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 4.0,
+   "min": 21.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909865|4683778",
@@ -2253,7 +2575,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 3.0,
+   "min": 21.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909864|4433247",
@@ -2301,7 +2630,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 26.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|3062679",
@@ -2349,7 +2685,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 35.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|3136195",
@@ -2397,7 +2740,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 22.0,
+   "min": 33.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909864|6450",
@@ -2445,7 +2795,10 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "void",
+   "reason": "did not play"
+  }
  },
  {
   "id": "401909865|2991139",
@@ -2493,7 +2846,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 33.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909864|4432816",
@@ -2541,7 +2901,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 17.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|3147657",
@@ -2589,7 +2956,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 6.0,
+   "min": 35.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909863|4431823",
@@ -2637,7 +3011,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 1.0,
+   "min": 13.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|3934719",
@@ -2685,7 +3066,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 22.0,
+   "min": 35.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909864|4395625",
@@ -2733,7 +3121,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 20.0,
+   "min": 32.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909864|3032976",
@@ -2781,7 +3176,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 31.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909865|4066648",
@@ -2829,7 +3231,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 5.0,
+   "min": 29.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909864|4433134",
@@ -2877,7 +3286,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 0.0,
+   "min": 28.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909865|4278073",
@@ -2925,7 +3341,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 34.0,
+   "min": 36.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909864|4432847",
@@ -2973,7 +3396,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 23.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|4702382",
@@ -3021,7 +3451,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 19.0,
+   "min": 27.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909863|4277847",
@@ -3069,7 +3506,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 33.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909866|4684742",
@@ -3117,7 +3561,10 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "void",
+   "reason": "did not play"
+  }
  },
  {
   "id": "401909866|4432166",
@@ -3165,7 +3612,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 26.0,
+   "min": 33.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909866|3157465",
@@ -3213,7 +3667,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 21.0,
+   "min": 32.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909866|3917376",
@@ -3261,7 +3722,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 16.0,
+   "min": 40.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909866|3908845",
@@ -3309,7 +3777,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 16.0,
+   "min": 34.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909866|1966",
@@ -3357,7 +3832,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 18.0,
+   "min": 33.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909866|4278562",
@@ -3405,7 +3887,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 23.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909866|4431678",
@@ -3453,7 +3942,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 29.0,
+   "min": 34.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909866|5124612",
@@ -3501,7 +3997,10 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "void",
+   "reason": "did not play"
+  }
  },
  {
   "id": "401909867|4903027",
@@ -3549,7 +4048,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T23:31:45+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 32.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909867|4065732",
@@ -3597,7 +4103,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T23:31:45+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 7.0,
+   "min": 29.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909867|3155942",
@@ -3645,7 +4158,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T23:31:45+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 35.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909867|5112087",
@@ -3693,7 +4213,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T23:31:45+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 16.0,
+   "min": 33.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909867|2991070",
@@ -3741,7 +4268,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T23:31:45+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 5.0,
+   "min": 22.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909867|4594327",
@@ -3789,7 +4323,10 @@
   "learned": false,
   "recorded_at": "2026-10-25T18:32:31+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "void",
+   "reason": "did not play"
+  }
  },
  {
   "id": "401909867|4431679",
@@ -3837,7 +4374,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T23:31:45+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 12.0,
+   "min": 39.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909867|4593016",
@@ -3885,7 +4429,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T23:31:45+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 7.0,
+   "min": 17.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909867|4065733",
@@ -3933,7 +4484,14 @@
   "learned": false,
   "recorded_at": "2026-10-25T23:31:45+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 31.0,
+   "min": 32.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909867|3064440",
@@ -3981,6 +4539,13 @@
   "learned": false,
   "recorded_at": "2026-10-25T23:31:45+00:00",
   "source": "live",
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 37.0,
+   "min": 40.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  }
 ]
