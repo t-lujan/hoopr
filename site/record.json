@@ -1,65 +1,65 @@
 {
- "updated": "2026-10-26T16:45:41+00:00",
+ "updated": "2026-10-27T15:51:11+00:00",
  "break_even": 0.5238,
  "since": "2026-10-20",
  "overall": {
-  "w": 274,
-  "l": 264,
+  "w": 335,
+  "l": 320,
   "p": 0,
-  "win_pct": 0.5093,
-  "units": -14.91
+  "win_pct": 0.5115,
+  "units": -15.45
  },
  "base_model": {
-  "w": 274,
-  "l": 264,
+  "w": 335,
+  "l": 320,
   "p": 0,
-  "win_pct": 0.5093,
-  "units": -14.91
+  "win_pct": 0.5115,
+  "units": -15.45
  },
  "by_confidence": {
   "Coin flip": {
-   "w": 53,
-   "l": 63,
+   "w": 64,
+   "l": 74,
    "p": 0,
-   "win_pct": 0.4569,
-   "units": -14.82
+   "win_pct": 0.4638,
+   "units": -15.82
   },
   "Lean": {
-   "w": 67,
-   "l": 73,
+   "w": 83,
+   "l": 89,
    "p": 0,
-   "win_pct": 0.4786,
-   "units": -12.09
+   "win_pct": 0.4826,
+   "units": -13.55
   },
   "Moderate": {
-   "w": 125,
-   "l": 87,
+   "w": 156,
+   "l": 108,
    "p": 0,
-   "win_pct": 0.5896,
-   "units": 26.64
+   "win_pct": 0.5909,
+   "units": 33.82
   },
   "Strong": {
-   "w": 29,
-   "l": 41,
+   "w": 32,
+   "l": 49,
    "p": 0,
-   "win_pct": 0.4143,
-   "units": -14.64
+   "win_pct": 0.3951,
+   "units": -19.91
   }
  },
  "by_side": {
   "OVER": {
-   "w": 149,
-   "l": 147,
+   "w": 181,
+   "l": 177,
    "p": 0,
-   "win_pct": 0.5034,
-   "units": -11.55
+   "win_pct": 0.5056,
+   "units": -12.45
   },
   "UNDER": {
-   "w": 125,
-   "l": 117,
+   "w": 154,
+   "l": 143,
    "p": 0,
-   "win_pct": 0.5165,
-   "units": -3.36
+   "win_pct": 0.5185,
+   "units": -3.0
   }
  },
  "by_day": [
@@ -110,65 +110,73 @@
    "p": 0,
    "win_pct": 0.4684,
    "units": -8.36
+  },
+  {
+   "day": "2026-10-26",
+   "w": 61,
+   "l": 56,
+   "p": 0,
+   "win_pct": 0.5214,
+   "units": -0.55
   }
  ],
  "calibration": [
   {
    "lo": 0.5,
    "hi": 0.53,
-   "n": 112,
-   "predicted": 0.5151,
-   "actual": 0.4554
+   "n": 134,
+   "predicted": 0.5148,
+   "actual": 0.4627
   },
   {
    "lo": 0.53,
    "hi": 0.57,
-   "n": 143,
-   "predicted": 0.55,
-   "actual": 0.4825
+   "n": 174,
+   "predicted": 0.5494,
+   "actual": 0.4828
   },
   {
    "lo": 0.57,
    "hi": 0.62,
-   "n": 126,
-   "predicted": 0.591,
-   "actual": 0.5952
+   "n": 158,
+   "predicted": 0.5915,
+   "actual": 0.5823
   },
   {
    "lo": 0.62,
    "hi": 1.0,
-   "n": 157,
-   "predicted": 0.6773,
-   "actual": 0.5032
+   "n": 189,
+   "predicted": 0.6752,
+   "actual": 0.5132
   }
  ],
  "pending": 0,
  "learning": {
-  "active": false,
-  "trained_on": 538,
-  "holdout": 108,
-  "base_log_loss": 0.73077,
-  "learned_log_loss": 0.73295,
-  "reason": "Learned weights didn't clearly beat the base model on the newest 108 picks, so they stay off.",
+  "active": true,
+  "trained_on": 655,
+  "holdout": 131,
+  "base_log_loss": 0.70893,
+  "learned_log_loss": 0.69319,
+  "reason": "Learned weights beat the base model on the newest 131 picks.",
   "weights": {
-   "edge": 0.0,
-   "stats_edge": 0.0,
-   "hit_rate": 0.0,
-   "role_change": 0.0,
-   "early_season": 0.0,
-   "listed": 0.0,
-   "f_home": 0.0,
-   "f_rest": 0.0,
-   "f_defense": 0.0,
-   "f_pace": 0.0,
-   "f_vegas": 0.0,
-   "f_position": 0.0,
-   "f_opp_injuries": 0.0,
-   "f_h2h": 0.0,
-   "f_teammates": 0.0,
-   "f_blowout": 0.0
+   "edge": -0.16626,
+   "stats_edge": -0.25577,
+   "hit_rate": -0.29832,
+   "role_change": -0.13818,
+   "early_season": 0.00748,
+   "listed": 0.30194,
+   "f_home": -0.08945,
+   "f_rest": -0.07365,
+   "f_defense": 0.03122,
+   "f_pace": -0.00235,
+   "f_vegas": 0.05766,
+   "f_position": 0.04025,
+   "f_opp_injuries": 0.00111,
+   "f_h2h": 0.08239,
+   "f_teammates": -0.02285,
+   "f_blowout": -0.02703
   },
-  "bias": 0.0,
-  "updated": "2026-10-26T16:45:41+00:00"
+  "bias": 0.00748,
+  "updated": "2026-10-27T15:51:11+00:00"
  }
 }
