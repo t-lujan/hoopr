@@ -1579,7 +1579,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -1627,7 +1627,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -1675,7 +1675,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -1688,42 +1688,42 @@
   "team": "POR",
   "opponent": "LAL",
   "home": false,
-  "line": 21.5,
+  "line": 22.5,
   "prices": null,
   "pick": "OVER",
   "confidence": "Coin flip",
-  "p_over": 0.5259,
-  "p_base": 0.615,
-  "projection": 25.9,
+  "p_over": 0.507,
+  "p_base": 0.5692,
+  "projection": 26.2,
   "stats_projection": 28.24,
   "sim": {
-   "over": 62,
-   "under": 38,
+   "over": 57,
+   "under": 43,
    "push": 0,
-   "median": 26,
+   "median": 23,
    "p10": 16,
-   "p90": 37
+   "p90": 43
   },
   "features": {
-   "edge": 0.48244,
-   "stats_edge": 0.74221,
-   "hit_rate": 0.40547,
+   "edge": 0.34812,
+   "stats_edge": 0.53556,
+   "hit_rate": 0.26826,
    "role_change": 0.0,
    "early_season": 1.0,
    "listed": 0.0,
-   "f_home": -0.07381,
-   "f_rest": 0.02644,
-   "f_defense": 0.00881,
-   "f_pace": -0.01542,
-   "f_vegas": 0.00661,
-   "f_position": 0.03525,
+   "f_home": -0.06254,
+   "f_rest": 0.0224,
+   "f_defense": 0.00747,
+   "f_pace": -0.01307,
+   "f_vegas": 0.0056,
+   "f_position": 0.02987,
    "f_opp_injuries": 0.0,
-   "f_h2h": 0.12118,
-   "f_teammates": 0.24456,
+   "f_h2h": 0.10268,
+   "f_teammates": 0.20723,
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -1771,7 +1771,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -1784,42 +1784,42 @@
   "team": "POR",
   "opponent": "LAL",
   "home": false,
-  "line": 15.5,
+  "line": 16.5,
   "prices": null,
   "pick": "UNDER",
-  "confidence": "Coin flip",
-  "p_over": 0.4924,
-  "p_base": 0.5558,
-  "projection": 16.7,
+  "confidence": "Lean",
+  "p_over": 0.4445,
+  "p_base": 0.4717,
+  "projection": 17.0,
   "stats_projection": 17.32,
   "sim": {
-   "over": 53,
-   "under": 47,
+   "over": 44,
+   "under": 56,
    "push": 0,
-   "median": 16,
-   "p10": 10,
-   "p90": 26
+   "median": 15,
+   "p10": 8,
+   "p90": 29
   },
   "features": {
-   "edge": 0.17264,
-   "stats_edge": 0.2656,
-   "hit_rate": 0.54654,
+   "edge": 0.06461,
+   "stats_edge": 0.09939,
+   "hit_rate": 0.26826,
    "role_change": 0.0,
    "early_season": 1.0,
    "listed": 0.0,
-   "f_home": -0.07139,
-   "f_rest": 0.02768,
-   "f_defense": 0.00874,
-   "f_pace": -0.01603,
-   "f_vegas": 0.00728,
-   "f_position": -0.03934,
+   "f_home": -0.05918,
+   "f_rest": 0.02295,
+   "f_defense": 0.00725,
+   "f_pace": -0.01328,
+   "f_vegas": 0.00604,
+   "f_position": -0.03261,
    "f_opp_injuries": 0.0,
-   "f_h2h": -0.16172,
+   "f_h2h": -0.13406,
    "f_teammates": 0.0,
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -1867,7 +1867,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -1915,7 +1915,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -1963,7 +1963,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -2011,7 +2011,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -2059,7 +2059,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -2072,42 +2072,42 @@
   "team": "LAL",
   "opponent": "POR",
   "home": true,
-  "line": 7.5,
+  "line": 8.5,
   "prices": null,
   "pick": "UNDER",
   "confidence": "Coin flip",
-  "p_over": 0.4792,
-  "p_base": 0.5642,
-  "projection": 9.2,
+  "p_over": 0.4744,
+  "p_base": 0.5408,
+  "projection": 9.6,
   "stats_projection": 10.17,
   "sim": {
-   "over": 53,
-   "under": 47,
+   "over": 51,
+   "under": 49,
    "push": 0,
-   "median": 8,
-   "p10": 2,
-   "p90": 18
+   "median": 9,
+   "p10": 4,
+   "p90": 16
   },
   "features": {
-   "edge": 0.29533,
-   "stats_edge": 0.45435,
-   "hit_rate": 0.69315,
+   "edge": 0.2495,
+   "stats_edge": 0.38385,
+   "hit_rate": 0.54654,
    "role_change": 0.0,
    "early_season": 1.0,
    "listed": 0.0,
-   "f_home": -0.08503,
+   "f_home": -0.11481,
    "f_rest": 0.0,
-   "f_defense": -0.0068,
-   "f_pace": 0.0085,
-   "f_vegas": 0.0085,
-   "f_position": 0.01871,
+   "f_defense": -0.00918,
+   "f_pace": 0.01148,
+   "f_vegas": 0.01148,
+   "f_position": 0.02526,
    "f_opp_injuries": 0.0,
-   "f_h2h": 0.08843,
+   "f_h2h": 0.1194,
    "f_teammates": 0.0,
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -2155,7 +2155,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -2203,7 +2203,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -2251,7 +2251,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  },
@@ -2299,7 +2299,7 @@
    "f_blowout": 0.0
   },
   "learned": true,
-  "recorded_at": "2026-10-27T20:13:32+00:00",
+  "recorded_at": "2026-10-28T00:44:08+00:00",
   "source": "live",
   "result": null
  }
