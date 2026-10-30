@@ -114,3 +114,9 @@ footer { color: var(--dim); font-size: 13px; }
   td { border-top: 0; }
   td.d { grid-column: 1 / -1; padding-top: 0; }
 }
+.era-tabs { display: flex; gap: 6px; margin: 0 0 8px; }
+.era-tabs button { background: var(--chip); color: inherit; padding: 8px 14px; font-size: 14px; }
+.era-tabs button[aria-selected="true"] { background: var(--accent); color: #fff; }
+.record .era-note { color: var(--dim); font-size: 14px; }
+.record table.picks td:nth-child(2) { white-space: normal; }
+.record details summary { cursor: pointer; margin-top: 8px; font-size: 14px; }

@@ -29,6 +29,8 @@ RECORD_PATH = os.path.join(ROOT, "site", "record.json")
 ET = ZoneInfo("America/New_York")
 TIERS = ["Coin flip", "Lean", "Moderate", "Strong"]
 WIN_UNITS = 100 / 110  # profit on a winning -110 bet of 1 unit
+MODEL_VERSION = 2      # bump when the model changes enough that the record should start over
+V2_SINCE = "2026-10-30T05:33:40+00:00"  # v2 went live (80% market pull, prices, 2000 sims, gated learner)
 
 
 def game_day(dt):
@@ -71,7 +73,7 @@ def make_record(r, game, recorded_at, source="live"):
         "projection": r["projection"], "stats_projection": r["stats_projection"],
         "sim": {k: sim[k] for k in ("over", "under", "push", "median", "p10", "p90")},
         "features": r["features"], "learned": r["learned"],
-        "recorded_at": recorded_at, "source": source, "result": None,
+        "recorded_at": recorded_at, "source": source, "version": MODEL_VERSION, "result": None,
     }
 
 
@@ -177,7 +179,15 @@ def tally(rows, key="won"):
             "units": round(units, 2)}
 
 
-def report(rows, params):
+def version_of(r):
+    """Model version that made a pick. Picks saved before versions existed are dated against V2_SINCE."""
+    if r.get("version"):
+        return r["version"]
+    at = datetime.fromisoformat(r["recorded_at"]) if r.get("recorded_at") else None
+    return 2 if at and at >= datetime.fromisoformat(V2_SINCE) else 1
+
+
+def era_report(rows):
     graded = [r for r in rows if (r.get("result") or {}).get("status") == "graded" and r["pick"] in ("OVER", "UNDER")]
     p_pick = lambda r: r["p_over"] if r["pick"] == "OVER" else 1 - r["p_over"]  # noqa: E731
     days = sorted({game_day(datetime.fromisoformat(r["tipoff"])) for r in graded})
@@ -187,10 +197,14 @@ def report(rows, params):
         if b:
             calib.append({"lo": lo, "hi": min(hi, 1.0), "n": len(b), "predicted": round(sum(map(p_pick, b)) / len(b), 4),
                           "actual": round(sum(1 for r in b if r["result"]["won"]) / len(b), 4)})
+    picks = [{"day": game_day(datetime.fromisoformat(r["tipoff"])), "player": r["player"], "team": r["team"],
+              "opp": r["opponent"], "line": r["line"], "pick": r["pick"], "conf": r["confidence"],
+              "pts": r["result"]["pts"], "won": r["result"]["won"]}
+             for r in sorted(graded, key=lambda r: (r["tipoff"], r["player"]), reverse=True)]
     return {
-        "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "break_even": BREAK_EVEN,
         "since": days[0] if days else None,
+        "until": days[-1] if days else None,
         "overall": tally(graded),
         "base_model": tally(graded, "base_won"),
         "by_confidence": {t: tally([r for r in graded if r["confidence"] == t]) for t in TIERS},
@@ -199,9 +213,20 @@ def report(rows, params):
                    for d in days[-14:]],
         "calibration": calib,
         "pending": sum(1 for r in rows if not r.get("result")),
-        "learning": {k: params.get(k) for k in ("active", "trained_on", "holdout", "base_log_loss", "learned_log_loss",
-                                                 "coin_log_loss", "live_log_loss", "gate", "reason", "weights", "bias", "updated")},
+        "picks": picks,
     }
+
+
+def report(rows, params):
+    """Top level is the current model's record; older models' records sit under "previous"."""
+    current = [r for r in rows if version_of(r) == MODEL_VERSION]
+    out = {"updated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "version": MODEL_VERSION,
+           "version_since": V2_SINCE, **era_report(current)}
+    out["previous"] = {str(v): era_report([r for r in rows if version_of(r) == v]) for v in range(1, MODEL_VERSION)}
+    out["learning"] = {k: params.get(k) for k in ("active", "trained_on", "holdout", "base_log_loss", "learned_log_loss",
+                                                   "coin_log_loss", "live_log_loss", "gate", "reason", "weights", "bias",
+                                                   "updated")}
+    return out
 
 
 def learn_step():
