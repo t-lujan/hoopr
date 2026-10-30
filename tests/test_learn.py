@@ -67,15 +67,21 @@ class Learning(unittest.TestCase):
             self.assertEqual(out["gate"], "failed")
             self.assertIn("margin_vs_coin", out)
 
-    def test_failed_gate_keeps_old_live_params(self):
+    def test_failed_gate_switches_learning_off(self):
         live = {"active": True, "bias": 0.01, "weights": {"edge": 0.02, "role_change": -0.1}, "features": ["edge", "role_change"]}
         out = learn.train(synthetic(800, 0.0, 5), live_params=live)
         self.assertEqual(out["gate"], "failed")
-        self.assertTrue(out["active"])
-        self.assertEqual(out["bias"], 0.01)
-        self.assertEqual(out["weights"], live["weights"])
-        self.assertEqual(out["features"], live["features"])
+        self.assertFalse(out["active"])
+        self.assertEqual(out["bias"], 0.0)
+        self.assertEqual(out["weights"], {k: 0.0 for k in learn.FEATURES})
         self.assertIn("live_log_loss", out)
+        self.assertEqual(learn.apply(out, 0.37, {"edge": 2.0}), 0.37)
+
+    def test_off_layer_turns_back_on_with_a_real_signal(self):
+        out = learn.train(synthetic(1000, 1.0, 3), live_params={"active": False})
+        self.assertEqual(out["gate"], "passed")
+        self.assertTrue(out["active"])
+        self.assertEqual(out["live_log_loss"], out["base_log_loss"])
 
     def test_apply_uses_the_params_own_keys(self):
         old = {"active": True, "bias": 0.0, "weights": {k: 0.0 for k in

@@ -154,15 +154,16 @@ def train(rows, live_params=None):
 
     Gate: fit on the older 80%, then on the newest 20% the new weights must beat
     both a coin flip and the weights currently live, by more than 1.645 paired
-    bootstrap standard deviations. If not, the live weights are left alone.
+    bootstrap standard deviations. If not, the learned layer is switched off
+    and picks come straight from the base model. With the layer already off,
+    "live" is the base model itself.
     """
     n = len(rows)
     live = live_params or {}
     live_on = bool(live.get("active")) and bool(live.get("weights"))
-    # carry the live model forward unchanged unless the gate passes
-    out = {"trained_on": n, "active": live_on, "bias": live.get("bias", 0.0) if live_on else 0.0,
-           "weights": live.get("weights") if live.get("weights") else {k: 0.0 for k in FEATURES}}
-    out["features"] = list(out["weights"])
+    # the learned layer is switched off (base model only) unless new weights pass the gate
+    out = {"trained_on": n, "active": False, "bias": 0.0, "weights": {k: 0.0 for k in FEATURES},
+           "features": list(FEATURES)}
     if n < MIN_GRADED:
         out["gate"] = "failed"
         out["reason"] = f"Needs {MIN_GRADED} graded picks before learning; has {n}."
@@ -191,5 +192,5 @@ def train(rows, live_params=None):
         out.update(gate="failed",
                    reason=f"New weights didn't clearly beat a coin flip and the live model on the newest {m} picks "
                           f"(gain vs coin {coin_gain:+.4f} against margin {coin_margin:.4f}; vs live {live_gain:+.4f} "
-                          f"against {live_margin:.4f}), so the live model is unchanged.")
+                          f"against {live_margin:.4f}), so learning is off and picks come from the base model.")
     return out
