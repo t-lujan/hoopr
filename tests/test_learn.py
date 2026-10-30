@@ -26,7 +26,7 @@ class Learning(unittest.TestCase):
     def test_features_sum_factor_impacts_in_sd_units(self):
         rows = [{"key": "home", "impact": 1.0}, {"key": "rest", "impact": -0.5}, {"key": "market", "impact": 2.0}]
         x = learn.features(26.0, 27.0, 24.5, 5.0, 0.5, rows, False, True, False)
-        self.assertEqual(set(x), set(learn.FEATURES))
+        self.assertTrue(set(learn.FEATURES) <= set(x))
         self.assertAlmostEqual(x["edge"], 0.3)
         self.assertAlmostEqual(x["stats_edge"], 0.5)
         self.assertAlmostEqual(x["f_home"], 0.2)
@@ -45,6 +45,7 @@ class Learning(unittest.TestCase):
         self.assertGreater(w["edge"], 0.6)
         self.assertLess(abs(bias), 0.15)
         self.assertLess(max(abs(v) for k, v in w.items() if k != "edge"), 1e-6)
+        self.assertEqual(set(w), {"edge", "stats_edge", "hit_rate", "listed"})
 
     def test_too_few_picks_never_learns(self):
         out = learn.train(synthetic(learn.MIN_GRADED - 1, 2.0, 2))
@@ -54,12 +55,37 @@ class Learning(unittest.TestCase):
     def test_real_signal_goes_live(self):
         out = learn.train(synthetic(1000, 1.0, 3))
         self.assertTrue(out["active"])
+        self.assertEqual(out["gate"], "passed")
+        self.assertLess(out["learned_log_loss"], out["coin_log_loss"])
         self.assertLess(out["learned_log_loss"], out["base_log_loss"])
+        self.assertEqual(set(out["weights"]), set(learn.FEATURES))
 
-    def test_noise_does_not_go_live(self):
-        out = learn.train(synthetic(800, 0.0, 4))
-        if out["active"]:  # if noise squeaks past the holdout, the correction must be tiny
-            self.assertLess(max(abs(v) for v in out["weights"].values()), 0.3)
+    def test_gate_refuses_pure_noise(self):
+        for seed in range(5, 10):
+            out = learn.train(synthetic(800, 0.0, seed))
+            self.assertFalse(out["active"], seed)
+            self.assertEqual(out["gate"], "failed")
+            self.assertIn("margin_vs_coin", out)
+
+    def test_failed_gate_keeps_old_live_params(self):
+        live = {"active": True, "bias": 0.01, "weights": {"edge": 0.02, "role_change": -0.1}, "features": ["edge", "role_change"]}
+        out = learn.train(synthetic(800, 0.0, 5), live_params=live)
+        self.assertEqual(out["gate"], "failed")
+        self.assertTrue(out["active"])
+        self.assertEqual(out["bias"], 0.01)
+        self.assertEqual(out["weights"], live["weights"])
+        self.assertEqual(out["features"], live["features"])
+        self.assertIn("live_log_loss", out)
+
+    def test_apply_uses_the_params_own_keys(self):
+        old = {"active": True, "bias": 0.0, "weights": {k: 0.0 for k in
+               ["edge", "stats_edge", "hit_rate", "role_change", "early_season", "listed"] + [f"f_{k}" for k in learn.FACTOR_KEYS]}}
+        old["weights"]["role_change"] = 0.5
+        old["weights"]["f_home"] = -0.5
+        x = {"role_change": 1.0, "f_home": 1.0}
+        self.assertAlmostEqual(learn.apply(old, 0.6, x), 0.6)
+        old["weights"]["f_home"] = 0.0
+        self.assertGreater(learn.apply(old, 0.6, x), 0.6)
 
 
 class Grading(unittest.TestCase):
@@ -88,6 +114,14 @@ class Grading(unittest.TestCase):
         t = daily.tally(rows)
         self.assertEqual((t["w"], t["l"]), (11, 10))
         self.assertAlmostEqual(t["units"], 0.0, places=2)
+
+    def test_units_use_the_picked_sides_price(self):
+        win = {"pick": "UNDER", "prices": {"over": -150, "under": 130}, "result": {"won": True}}
+        self.assertAlmostEqual(daily.tally([win])["units"], 1.3)
+        win["pick"], win["prices"] = "OVER", {"over": -150, "under": 130}
+        self.assertAlmostEqual(daily.tally([win])["units"], 100 / 150, places=2)
+        old = {"pick": "OVER", "prices": None, "result": {"won": True}}
+        self.assertAlmostEqual(daily.tally([old])["units"], 0.91, places=2)
 
 
 if __name__ == "__main__":

@@ -22,7 +22,7 @@ ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 sys.path.insert(0, ROOT)
 
 from hoopr import espn, learn  # noqa: E402
-from hoopr.predict import BREAK_EVEN, predict  # noqa: E402
+from hoopr.predict import BREAK_EVEN, predict, price_pair  # noqa: E402
 
 PICKS = os.path.join(ROOT, "data", "picks")
 RECORD_PATH = os.path.join(ROOT, "site", "record.json")
@@ -66,7 +66,7 @@ def make_record(r, game, recorded_at, source="live"):
         "id": f"{game['event_id']}|{r['player']['id']}",
         "event_id": game["event_id"], "tipoff": game["tipoff"], "player_id": r["player"]["id"],
         "player": r["player"]["name"], "team": r["player"]["team"], "opponent": r["game"]["opponent"],
-        "home": r["game"]["home"], "line": r["line"], "prices": (r.get("line_source") or {}).get("prices"),
+        "home": r["game"]["home"], "line": r["line"], "prices": r["prices"], "p_market": r["p_market"], "break_even": r["break_even"],
         "pick": r["pick"], "confidence": r["confidence"], "p_over": r["p_over"], "p_base": r["p_base"],
         "projection": r["projection"], "stats_projection": r["stats_projection"],
         "sim": {k: sim[k] for k in ("over", "under", "push", "median", "p10", "p90")},
@@ -90,18 +90,17 @@ def record(now=None):
     for g in games:
         game = {"event_id": g["event_id"], "tipoff": g["date"].isoformat()}
         for pid, li in espn.points_lines(g["event_id"]).items():
-            jobs.append((game, pid, li["line"]))
+            jobs.append((game, pid, li))
     print(f"{len(games)} upcoming games, {len(jobs)} posted points lines", flush=True)
 
     def run(job):
-        game, pid, line = job
+        game, pid, li = job
         try:
-            r = predict(None, line, now=now, athlete_id=pid, params=params)
+            r = predict(None, li["line"], now=now, athlete_id=pid, params=params, line_info=li)
         except Exception as e:  # one bad player must not sink the run
             return None, f"{pid} {game['event_id']}: {e}"
         if r["game"]["event_id"] != game["event_id"]:
             return None, f"{r['player']['name']}: next game isn't {game['event_id']}"
-        r["line_source"] = r.get("line_source") or {}
         return make_record(r, game, now.isoformat(timespec="seconds")), None
 
     with ThreadPoolExecutor(max_workers=6) as ex:
@@ -161,11 +160,21 @@ def grade(now=None):
 
 # ---------------------------------------------------------------- learn + report
 
+def win_units(r):
+    """Profit on a winning 1-unit bet at the picked side's own price; -110 when the record has none."""
+    prices = r.get("prices")
+    a = price_pair(prices).get(r["pick"].lower()) if isinstance(prices, dict) else None
+    if a is None:
+        return WIN_UNITS
+    return a / 100 if a > 0 else 100 / -a
+
+
 def tally(rows, key="won"):
     w = sum(1 for r in rows if r["result"].get(key) is True)
     l = sum(1 for r in rows if r["result"].get(key) is False)
+    units = sum(win_units(r) for r in rows if r["result"].get(key) is True) - l
     return {"w": w, "l": l, "p": len(rows) - w - l, "win_pct": round(w / (w + l), 4) if w + l else None,
-            "units": round(w * WIN_UNITS - l, 2)}
+            "units": round(units, 2)}
 
 
 def report(rows, params):
@@ -191,7 +200,7 @@ def report(rows, params):
         "calibration": calib,
         "pending": sum(1 for r in rows if not r.get("result")),
         "learning": {k: params.get(k) for k in ("active", "trained_on", "holdout", "base_log_loss", "learned_log_loss",
-                                                 "reason", "weights", "bias", "updated")},
+                                                 "coin_log_loss", "live_log_loss", "gate", "reason", "weights", "bias", "updated")},
     }
 
 
@@ -199,9 +208,8 @@ def learn_step():
     rows = all_rows()
     train_rows = [{"p_base": r["p_base"], "x": r["features"], "y": 1 if r["result"]["outcome"] == "over" else 0}
                   for r in rows if (r.get("result") or {}).get("status") == "graded" and r["result"]["outcome"] != "push"]
-    params = learn.train(train_rows)
+    params = learn.train(train_rows, live_params=learn.load_params())
     params["updated"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    params["features"] = learn.FEATURES
     with open(learn.PARAMS_PATH, "w") as f:
         json.dump(params, f, indent=1)
         f.write("\n")

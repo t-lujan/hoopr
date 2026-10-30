@@ -190,5 +190,37 @@ class EndToEnd(unittest.TestCase):
         self.assertAlmostEqual(r["baseline"], 20.0)
 
 
+class Market(unittest.TestCase):
+    def test_market_p_over(self):
+        self.assertAlmostEqual(engine.market_p_over([-110, -110]), 0.5)
+        self.assertAlmostEqual(engine.market_p_over(["-110", "-110"]), 0.5)
+        io, iu = 150 / 250, 100 / 230
+        self.assertAlmostEqual(engine.market_p_over([-150, 130]), io / (io + iu))
+        self.assertGreater(engine.market_p_over([-150, 130]), 0.5)
+        for bad in (None, [], [-120], [-120, None], [None, 105], ["x", "y"], {"over": -120}):
+            self.assertEqual(engine.market_p_over(bad), 0.5)
+
+    def test_break_even_uses_picked_side(self):
+        prices = {"over": -150, "under": 130}
+        self.assertAlmostEqual(engine.break_even_for(prices, "OVER"), 0.6)
+        self.assertAlmostEqual(engine.break_even_for(prices, "UNDER"), 100 / 230)
+        self.assertEqual(engine.break_even_for(None, "OVER"), engine.BREAK_EVEN)
+
+    def test_line_info_supplies_line_and_prices(self):
+        info = {"line": 24.5, "prices": ["-120", "100"], "provider": "Book"}
+        with fake_espn([game(i, 25) for i in range(30)]):
+            r = engine.predict("star", now=NOW, line_info=info)
+        self.assertEqual(r["line"], 24.5)
+        self.assertEqual(r["prices"], {"over": -120, "under": 100})
+        self.assertIn(r["break_even"], (round(120 / 220, 4), 0.5))
+        self.assertGreater(r["p_market"], 0.5)
+
+    def test_market_prior_is_80_percent(self):
+        with fake_espn([game(i, 25) for i in range(30)]):
+            r = engine.predict("star", 30.5, now=NOW)
+        row = next(f for f in r["factors"] if f.get("key") == "market")
+        self.assertIn("80%", row["detail"])
+
+
 if __name__ == "__main__":
     unittest.main()

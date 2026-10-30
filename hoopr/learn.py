@@ -19,16 +19,20 @@ both engines; the browser engine computes the same features (site/hoopr.js).
 import json
 import math
 import os
+import random
+import statistics
 
 PARAMS_PATH = os.path.join(os.path.dirname(__file__), "..", "site", "params.json")
 
 FACTOR_KEYS = ["home", "rest", "defense", "pace", "vegas", "position", "opp_injuries", "h2h", "teammates", "blowout"]
-FEATURES = ["edge", "stats_edge", "hit_rate", "role_change", "early_season", "listed"] + [f"f_{k}" for k in FACTOR_KEYS]
+FEATURES = ["edge", "stats_edge", "hit_rate", "listed"]
 
 MIN_GRADED = 500     # graded picks needed before any learning is attempted (holdout of 100+)
-MIN_GAIN = 0.002     # held-out log-loss improvement required to switch learned weights on
+BOOTSTRAPS = 1000    # paired resamples of the holdout used by the go-live gate
+Z = 1.645            # one-sided 95% margin, in bootstrap standard deviations
+LN2 = math.log(2)    # log loss of a coin flip
 HOLDOUT = 0.2        # newest share of picks used to test new weights
-L2 = 10.0            # regularization strength, in picks
+L2 = 50.0            # regularization strength, in picks
 
 
 def _logit(p):
@@ -71,7 +75,7 @@ def apply(params, p_base, x):
     w = (params or {}).get("weights") or {}
     if not (params or {}).get("active") or not w:
         return p_base
-    z = _logit(p_base) + params.get("bias", 0.0) + sum(w.get(k, 0.0) * x.get(k, 0.0) for k in FEATURES)
+    z = _logit(p_base) + params.get("bias", 0.0) + sum(wk * x.get(k, 0.0) for k, wk in w.items())
     return _sigmoid(z)
 
 
@@ -125,32 +129,67 @@ def fit(rows, l2=L2, iters=25):
     return beta[0], dict(zip(FEATURES, beta[1:]))
 
 
-def log_loss(rows, params):
-    total = 0.0
+def _losses(rows, params):
+    out = []
     for r in rows:
         p = apply(params, r["p_base"], r["x"])
-        total -= math.log(max(1e-9, p if r["y"] else 1 - p))
-    return total / len(rows) if rows else float("nan")
+        out.append(-math.log(max(1e-9, p if r["y"] else 1 - p)))
+    return out
 
 
-def train(rows):
-    """Fit new weights and decide whether they go live. rows must be in time order."""
+def log_loss(rows, params):
+    ls = _losses(rows, params)
+    return sum(ls) / len(ls) if ls else float("nan")
+
+
+def _gap(diffs, resamples):
+    """(mean, 1.645 * bootstrap sd) of the average of `diffs`, using shared resample indices."""
+    n = len(diffs)
+    means = [sum(diffs[i] for i in idx) / n for idx in resamples]
+    return sum(diffs) / n, Z * statistics.pstdev(means)
+
+
+def train(rows, live_params=None):
+    """Fit new weights and decide whether they go live. rows must be in time order.
+
+    Gate: fit on the older 80%, then on the newest 20% the new weights must beat
+    both a coin flip and the weights currently live, by more than 1.645 paired
+    bootstrap standard deviations. If not, the live weights are left alone.
+    """
     n = len(rows)
-    base = {"active": False}
-    out = {"trained_on": n, "active": False, "bias": 0.0, "weights": {k: 0.0 for k in FEATURES}}
+    live = live_params or {}
+    live_on = bool(live.get("active")) and bool(live.get("weights"))
+    # carry the live model forward unchanged unless the gate passes
+    out = {"trained_on": n, "active": live_on, "bias": live.get("bias", 0.0) if live_on else 0.0,
+           "weights": live.get("weights") if live.get("weights") else {k: 0.0 for k in FEATURES}}
+    out["features"] = list(out["weights"])
     if n < MIN_GRADED:
+        out["gate"] = "failed"
         out["reason"] = f"Needs {MIN_GRADED} graded picks before learning; has {n}."
         return out
     cut = int(n * (1 - HOLDOUT))
     train_rows, test_rows = rows[:cut], rows[cut:]
     bias, weights = fit(train_rows)
     trial = {"active": True, "bias": bias, "weights": weights}
-    base_ll, new_ll = log_loss(test_rows, base), log_loss(test_rows, trial)
-    out.update(holdout=len(test_rows), base_log_loss=round(base_ll, 5), learned_log_loss=round(new_ll, 5))
-    if new_ll < base_ll - MIN_GAIN:
+    live_eval = live if live_on else {"active": False}
+    new_l, live_l = _losses(test_rows, trial), _losses(test_rows, live_eval)
+    base_l = _losses(test_rows, {"active": False})
+    m = len(test_rows)
+    rng = random.Random(12345)
+    resamples = [[rng.randrange(m) for _ in range(m)] for _ in range(BOOTSTRAPS)]
+    coin_gain, coin_margin = _gap([LN2 - v for v in new_l], resamples)
+    live_gain, live_margin = _gap([a - b for a, b in zip(live_l, new_l)], resamples)
+    out.update(holdout=m, coin_log_loss=round(LN2, 5), live_log_loss=round(sum(live_l) / m, 5),
+               learned_log_loss=round(sum(new_l) / m, 5), base_log_loss=round(sum(base_l) / m, 5),
+               margin_vs_coin=round(coin_margin, 5), margin_vs_live=round(live_margin, 5))
+    if coin_gain > coin_margin and live_gain > live_margin:
         bias, weights = fit(rows)  # it generalizes: refit on everything
         out.update(active=True, bias=round(bias, 5), weights={k: round(v, 5) for k, v in weights.items()},
-                   reason=f"Learned weights beat the base model on the newest {len(test_rows)} picks.")
+                   features=list(FEATURES), gate="passed",
+                   reason=f"New weights beat a coin flip and the live model on the newest {m} picks by more than the noise margin.")
     else:
-        out["reason"] = f"Learned weights didn't clearly beat the base model on the newest {len(test_rows)} picks, so they stay off."
+        out.update(gate="failed",
+                   reason=f"New weights didn't clearly beat a coin flip and the live model on the newest {m} picks "
+                          f"(gain vs coin {coin_gain:+.4f} against margin {coin_margin:.4f}; vs live {live_gain:+.4f} "
+                          f"against {live_margin:.4f}), so the live model is unchanged.")
     return out

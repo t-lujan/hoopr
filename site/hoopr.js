@@ -264,7 +264,7 @@ export const live = {
 
 // ---------------------------------------------------------------- model
 
-const SIMS = 100;         // simulated games per prediction
+const SIMS = 2000;        // simulated games per prediction
 const MARGIN_SD = 12.5;   // spread of NBA final margins around the Vegas line
 const EARLY_EXIT = 0.03;  // chance a simulated game is cut short (injury, foul-out, ejection)
 
@@ -336,7 +336,24 @@ export function simulate(projection, line, history, expMin, marginMean, starter,
 // Mirrors hoopr/learn.py: logit(p_final) = logit(p_base) + bias + sum(weight * feature).
 
 const FACTOR_KEYS = ["home", "rest", "defense", "pace", "vegas", "position", "opp_injuries", "h2h", "teammates", "blowout"];
-const FEATURES = ["edge", "stats_edge", "hit_rate", "role_change", "early_season", "listed", ...FACTOR_KEYS.map(k => `f_${k}`)];
+// ESPN's "Total Points" items carry no side label; the documented order is over first, under second.
+const american = v => { const a = Math.trunc(Number(v)); return v != null && v !== "" && Math.abs(a) >= 100 ? a : null; };
+const implied = a => (a > 0 ? 100 / (a + 100) : -a / (-a + 100));
+export function pricePair(prices) {
+  const [o, u] = Array.isArray(prices) ? prices : [(prices || {}).over, (prices || {}).under];
+  return { over: american(o), under: american(u) };
+}
+// No-vig implied P(over) from the two prices; 0.5 (-110/-110) when either is missing.
+export function marketPOver(prices) {
+  const { over, under } = pricePair(prices);
+  if (over == null || under == null) return 0.5;
+  const io = implied(over), iu = implied(under);
+  return io / (io + iu);
+}
+export function breakEvenFor(prices, pick) {
+  const a = pick === "OVER" || pick === "UNDER" ? pricePair(prices)[pick.toLowerCase()] : null;
+  return a == null ? BREAK_EVEN : implied(a);
+}
 const logit = p => { p = Math.min(Math.max(p, 1e-4), 1 - 1e-4); return Math.log(p / (1 - p)); };
 const sigmoid = z => (z >= 0 ? 1 / (1 + Math.exp(-z)) : Math.exp(z) / (1 + Math.exp(z)));
 
@@ -355,7 +372,7 @@ export function features(projection, statsProjection, line, sd, pHit, rows, role
 export function applyParams(params, pBase, x) {
   const w = (params && params.weights) || {};
   if (!params || !params.active) return pBase;
-  return sigmoid(logit(pBase) + (params.bias || 0) + FEATURES.reduce((t, k) => t + (w[k] || 0) * (x[k] || 0), 0));
+  return sigmoid(logit(pBase) + (params.bias || 0) + Object.entries(w).reduce((t, [k, wk]) => t + (wk || 0) * (x[k] || 0), 0));
 }
 
 const hitRate = (games, line) => [games.filter(g => g.pts > line).length, games.filter(g => g.pts < line).length];
@@ -636,8 +653,8 @@ export async function predict(playerQuery, line = null, now = new Date(), onStep
   // Sportsbook lines react to news the box scores can't see yet (role changes,
   // minutes limits, lineup news), so the projection is pulled partway toward it.
   const statsProjection = f.value;
-  f.add("market", "Sportsbook line (market prior)", (0.65 * statsProjection + 0.35 * line) / statsProjection,
-    `Stats alone project ${f1(statsProjection)}; the line is ${line}. Projection is pulled 35% toward the line`);
+  f.add("market", "Sportsbook line (market prior)", (0.20 * statsProjection + 0.80 * line) / statsProjection,
+    `Stats alone project ${f1(statsProjection)}; the line is ${line}. Projection is pulled 80% toward the line`);
   const gap = Math.abs(statsProjection - line) / line;
 
   // ------------------------------------------------------------ probability
@@ -685,14 +702,16 @@ export async function predict(playerQuery, line = null, now = new Date(), onStep
     notes.push(`The stats and the line disagree by ${pct(gap)}. If this is a real sportsbook line, a gap that big usually means ` +
       "the book knows something (new role, minutes limit, injury) that past games can't show, so the bot widened its uncertainty.");
   }
-  if (pick !== "NO PLAY" && pPick < BREAK_EVEN) {
-    notes.push(`${pct(pPick, 1)} is below the ${pct(BREAK_EVEN, 1)} needed to profit at -110 odds; treat it as a lean, not a bet.`);
+  const prices = pricePair(lineInfo && lineInfo.prices);
+  const breakEven = breakEvenFor(prices, pick);
+  if (pick !== "NO PLAY" && pPick < breakEven) {
+    notes.push(`${pct(pPick, 1)} is below the ${pct(breakEven, 1)} needed to profit at the posted odds; treat it as a lean, not a bet.`);
   }
 
   return {
     player: { id: pid, name: ath.name, team: ath.team_abbr, position: ath.position, headshot: ath.headshot, other_matches: found.others },
     game: { event_id: game.event_id, date: game.date.toISOString(), home: game.home, opponent: game.opp_abbr, opponent_name: game.opp_name, rest_days: restDays },
-    line, line_source: lineInfo, injury_status: status, pick, confidence,
+    line, line_source: lineInfo, prices, p_market: marketPOver(prices), break_even: breakEven, injury_status: status, pick, confidence,
     probability: pPick, p_over: pOver, p_base: pBase, p_sim: sim.p_over, p_hit_rate: pEmp, simulation: sim,
     stats_projection: statsProjection, features: x, learned: !!(params && params.active),
     projection, baseline: base, std_dev: sim.sd,

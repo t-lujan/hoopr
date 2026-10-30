@@ -22,9 +22,52 @@ from datetime import datetime, timedelta, timezone
 from . import espn, learn
 
 BREAK_EVEN = 0.5238  # win rate needed to profit at standard -110 juice
-SIMS = 100           # simulated games per prediction
+SIMS = 2000          # simulated games per prediction
 MARGIN_SD = 12.5     # spread of NBA final margins around the Vegas line
 EARLY_EXIT = 0.03    # chance a simulated game is cut short (injury, foul-out, ejection)
+
+
+def _american(v):
+    """An american price as an int, or None if missing or not a valid price (ESPN sends strings)."""
+    try:
+        a = int(float(v))
+    except (TypeError, ValueError):
+        return None
+    return a if abs(a) >= 100 else None
+
+
+def implied(a):
+    """Implied win probability of an american price, vig included."""
+    return 100 / (a + 100) if a > 0 else -a / (-a + 100)
+
+
+def price_pair(prices):
+    """{"over", "under"} american prices from ESPN's list of "Total Points" prices.
+
+    The feed has no side label on these items; the documented order is over
+    first, under second, so that is what we assume. A dict passes through.
+    """
+    if isinstance(prices, dict):
+        o, u = prices.get("over"), prices.get("under")
+    else:
+        prices = list(prices or [])
+        o, u = (prices + [None, None])[:2]
+    return {"over": _american(o), "under": _american(u)}
+
+
+def market_p_over(prices):
+    """No-vig implied P(over) from the two prices; -110/-110 (0.5) when either is missing."""
+    pair = price_pair(prices)
+    if pair["over"] is None or pair["under"] is None:
+        return 0.5
+    io, iu = implied(pair["over"]), implied(pair["under"])
+    return io / (io + iu)
+
+
+def break_even_for(prices, pick):
+    """Win rate needed to profit on the picked side's own price (BREAK_EVEN if unknown)."""
+    a = price_pair(prices).get(pick.lower()) if pick in ("OVER", "UNDER") else None
+    return implied(a) if a is not None else BREAK_EVEN
 
 
 def _avg(xs):
@@ -185,8 +228,10 @@ def _recent_finals(team_id, season, n):
     return finals[-n:]
 
 
-def predict(player_query, line=None, now=None, athlete_id=None, params=None):
-    """athlete_id skips the name search; params are the learned weights (default: site/params.json)."""
+def predict(player_query, line=None, now=None, athlete_id=None, params=None, line_info=None):
+    """athlete_id skips the name search; params are the learned weights (default: site/params.json).
+
+    line_info is an espn.points_lines() entry; when given it supplies the line and prices without a refetch."""
     now = now or datetime.now(timezone.utc)
     season = espn.current_season(now)
     prev = season - 1
@@ -237,8 +282,9 @@ def predict(player_query, line=None, now=None, athlete_id=None, params=None):
         notes.append(f"{ath['name']} has changed teams since the last game played; the role on {ath['team_abbr']} may differ.")
 
     # ------------------------------------------------------------ the line
-    line_info = None
-    if line is None:
+    if line_info is not None:
+        line = line_info["line"]
+    elif line is None:
         line_info = espn.player_points_line(game["event_id"], pid)
         if not line_info:
             raise espn.ESPNError(
@@ -435,8 +481,8 @@ def predict(player_query, line=None, now=None, athlete_id=None, params=None):
     # Sportsbook lines react to news the box scores can't see yet (role changes,
     # minutes limits, lineup news), so the projection is pulled partway toward it.
     stats_projection = f.value
-    f.add("market", "Sportsbook line (market prior)", (0.65 * stats_projection + 0.35 * line) / stats_projection,
-          f"Stats alone project {stats_projection:.1f}; the line is {line:g}. Projection is pulled 35% toward the line")
+    f.add("market", "Sportsbook line (market prior)", (0.20 * stats_projection + 0.80 * line) / stats_projection,
+          f"Stats alone project {stats_projection:.1f}; the line is {line:g}. Projection is pulled 80% toward the line")
     gap = abs(stats_projection - line) / line
     role_change = games[0]["team_id"] != team_id
 
@@ -486,8 +532,10 @@ def predict(player_query, line=None, now=None, athlete_id=None, params=None):
         notes.append(f"The stats and the line disagree by {gap:.0%}. If this is a real sportsbook line, a gap that big "
                      "usually means the book knows something (new role, minutes limit, injury) that past games can't show, "
                      "so the bot widened its uncertainty.")
-    if pick != "NO PLAY" and p_pick < BREAK_EVEN:
-        notes.append(f"{p_pick:.1%} is below the {BREAK_EVEN:.1%} needed to profit at -110 odds; treat it as a lean, not a bet.")
+    prices = price_pair((line_info or {}).get("prices"))
+    break_even = break_even_for(prices, pick)
+    if pick != "NO PLAY" and p_pick < break_even:
+        notes.append(f"{p_pick:.1%} is below the {break_even:.1%} needed to profit at the posted odds; treat it as a lean, not a bet.")
 
     return Prediction(
         player={"id": pid, "name": ath["name"], "team": ath["team_abbr"], "position": ath["position"],
@@ -497,6 +545,9 @@ def predict(player_query, line=None, now=None, athlete_id=None, params=None):
               "rest_days": rest_days},
         line=line,
         line_source=line_info,
+        prices=prices,
+        p_market=round(market_p_over(prices), 4),
+        break_even=round(break_even, 4),
         injury_status=status,
         pick=pick,
         confidence=confidence,
