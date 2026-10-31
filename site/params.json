@@ -23,5 +23,5 @@
  "margin_vs_live": 0.01013,
  "gate": "failed",
  "reason": "New weights didn't clearly beat a coin flip and the live model on the newest 202 picks (gain vs coin -0.0043 against margin 0.0124; vs live -0.0012 against 0.0101), so learning is off and picks come from the base model.",
- "updated": "2026-10-31T07:30:52+00:00"
+ "updated": "2026-10-31T15:42:50+00:00"
 }
