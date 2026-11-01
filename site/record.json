@@ -1,68 +1,68 @@
 {
- "updated": "2026-10-31T15:42:50+00:00",
+ "updated": "2026-11-01T16:46:39+00:00",
  "version": 2,
  "version_since": "2026-10-30T05:33:40+00:00",
  "break_even": 0.5238,
  "since": "2026-10-30",
- "until": "2026-10-30",
+ "until": "2026-10-31",
  "overall": {
-  "w": 62,
-  "l": 61,
+  "w": 103,
+  "l": 97,
   "p": 0,
-  "win_pct": 0.5041,
-  "units": -5.78
+  "win_pct": 0.515,
+  "units": -5.38
  },
  "base_model": {
-  "w": 62,
-  "l": 61,
+  "w": 103,
+  "l": 97,
   "p": 0,
-  "win_pct": 0.5041,
-  "units": -5.78
+  "win_pct": 0.515,
+  "units": -5.38
  },
  "by_confidence": {
   "Coin flip": {
-   "w": 24,
-   "l": 25,
+   "w": 38,
+   "l": 45,
    "p": 0,
-   "win_pct": 0.4898,
-   "units": -3.72
+   "win_pct": 0.4578,
+   "units": -11.5
   },
   "Lean": {
-   "w": 18,
-   "l": 22,
+   "w": 32,
+   "l": 31,
    "p": 0,
-   "win_pct": 0.45,
-   "units": -5.68
+   "win_pct": 0.5079,
+   "units": -2.22
   },
   "Moderate": {
-   "w": 17,
-   "l": 10,
+   "w": 30,
+   "l": 16,
    "p": 0,
-   "win_pct": 0.6296,
-   "units": 4.9
+   "win_pct": 0.6522,
+   "units": 10.62
   },
   "Strong": {
    "w": 3,
-   "l": 4,
+   "l": 5,
    "p": 0,
-   "win_pct": 0.4286,
-   "units": -1.29
+   "win_pct": 0.375,
+   "units": -2.29
   }
  },
  "by_side": {
   "OVER": {
-   "w": 19,
-   "l": 24,
+   "w": 30,
+   "l": 42,
    "p": 0,
-   "win_pct": 0.4419,
-   "units": -7.1
+   "win_pct": 0.4167,
+   "units": -15.23
   },
   "UNDER": {
-   "w": 43,
-   "l": 37,
+   "w": 73,
+   "l": 55,
    "p": 0,
-   "win_pct": 0.5375,
-   "units": 1.32
+   "win_pct": 0.5703,
+   "units": 9.84
   }
  },
  "by_day": [
@@ -73,40 +73,895 @@
    "p": 0,
    "win_pct": 0.5041,
    "units": -5.78
+  },
+  {
+   "day": "2026-10-31",
+   "w": 41,
+   "l": 36,
+   "p": 0,
+   "win_pct": 0.5325,
+   "units": 0.4
   }
  ],
  "calibration": [
   {
    "lo": 0.5,
    "hi": 0.53,
-   "n": 49,
-   "predicted": 0.5132,
-   "actual": 0.4898
+   "n": 82,
+   "predicted": 0.5146,
+   "actual": 0.4512
   },
   {
    "lo": 0.53,
    "hi": 0.57,
-   "n": 40,
-   "predicted": 0.55,
-   "actual": 0.45
+   "n": 64,
+   "predicted": 0.5486,
+   "actual": 0.5156
   },
   {
    "lo": 0.57,
    "hi": 0.62,
-   "n": 25,
-   "predicted": 0.5904,
-   "actual": 0.64
+   "n": 41,
+   "predicted": 0.5881,
+   "actual": 0.6341
   },
   {
    "lo": 0.62,
    "hi": 1.0,
-   "n": 9,
-   "predicted": 0.6404,
-   "actual": 0.4444
+   "n": 13,
+   "predicted": 0.6532,
+   "actual": 0.5385
   }
  ],
  "pending": 0,
  "picks": [
+  {
+   "day": "2026-10-31",
+   "player": "Tari Eason",
+   "team": "HOU",
+   "opp": "OKC",
+   "line": 10.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 8.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Shai Gilgeous-Alexander",
+   "team": "OKC",
+   "opp": "HOU",
+   "line": 29.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 26.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Marcus Smart",
+   "team": "HOU",
+   "opp": "OKC",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 24.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Kevin Durant",
+   "team": "HOU",
+   "opp": "OKC",
+   "line": 23.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 14.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Kenrich Williams",
+   "team": "OKC",
+   "opp": "HOU",
+   "line": 6.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 11.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jared McCain",
+   "team": "OKC",
+   "opp": "HOU",
+   "line": 14.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 10.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jabari Smith Jr.",
+   "team": "HOU",
+   "opp": "OKC",
+   "line": 14.5,
+   "pick": "OVER",
+   "conf": "Moderate",
+   "pts": 30.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "opp": "HOU",
+   "line": 9.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 10.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Bennett Stirtz",
+   "team": "OKC",
+   "opp": "HOU",
+   "line": 7.5,
+   "pick": "OVER",
+   "conf": "Moderate",
+   "pts": 11.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Amen Thompson",
+   "team": "HOU",
+   "opp": "OKC",
+   "line": 16.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 8.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Alperen Sengun",
+   "team": "HOU",
+   "opp": "OKC",
+   "line": 18.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 16.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "opp": "HOU",
+   "line": 18.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 6.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Aday Mara",
+   "team": "OKC",
+   "opp": "HOU",
+   "line": 7.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 7.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Zach LaVine",
+   "team": "SAC",
+   "opp": "MEM",
+   "line": 21.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 11.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Zach Edey",
+   "team": "MEM",
+   "opp": "SAC",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 4.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Victor Wembanyama",
+   "team": "SA",
+   "opp": "MIN",
+   "line": 25.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 43.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Tyler Herro",
+   "team": "MIL",
+   "opp": "CLE",
+   "line": 21.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 15.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Terrence Shannon Jr.",
+   "team": "MIN",
+   "opp": "SA",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 2.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Stephon Castle",
+   "team": "SA",
+   "opp": "MIN",
+   "line": 16.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 0.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Sam Merrill",
+   "team": "CLE",
+   "opp": "MIL",
+   "line": 9.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 6.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Ryan Rollins",
+   "team": "MIL",
+   "opp": "CLE",
+   "line": 14.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Precious Achiuwa",
+   "team": "SAC",
+   "opp": "MEM",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 6.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Peyton Watson",
+   "team": "CLE",
+   "opp": "MIL",
+   "line": 13.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 5.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Myles Turner",
+   "team": "MIL",
+   "opp": "CLE",
+   "line": 9.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 10.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Mario Hezonja",
+   "team": "CLE",
+   "opp": "MIL",
+   "line": 8.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 8.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "LaMelo Ball",
+   "team": "MIN",
+   "opp": "SA",
+   "line": 19.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 10.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Kyle Kuzma",
+   "team": "MIL",
+   "opp": "CLE",
+   "line": 11.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 14.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Keldon Johnson",
+   "team": "SA",
+   "opp": "MIN",
+   "line": 10.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 2.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Kel'el Ware",
+   "team": "MIL",
+   "opp": "CLE",
+   "line": 9.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 19.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Kasparas Jakucionis",
+   "team": "MIL",
+   "opp": "CLE",
+   "line": 7.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 5.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Julian Champagnie",
+   "team": "SA",
+   "opp": "MIN",
+   "line": 11.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 12.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jonathan Kuminga",
+   "team": "MIN",
+   "opp": "SA",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 19.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jaylen Wells",
+   "team": "MEM",
+   "opp": "SAC",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 4.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jarrett Allen",
+   "team": "CLE",
+   "opp": "MIL",
+   "line": 13.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 25.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "James Harden",
+   "team": "CLE",
+   "opp": "MIL",
+   "line": 18.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 13.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jaime Jaquez Jr.",
+   "team": "MIL",
+   "opp": "CLE",
+   "line": 15.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 8.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jaden McDaniels",
+   "team": "MIN",
+   "opp": "SA",
+   "line": 16.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 19.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Evan Mobley",
+   "team": "CLE",
+   "opp": "MIL",
+   "line": 17.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 27.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Dylan Harper",
+   "team": "SA",
+   "opp": "MIN",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 25.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Donovan Mitchell",
+   "team": "CLE",
+   "opp": "MIL",
+   "line": 24.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 15.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Domantas Sabonis",
+   "team": "SAC",
+   "opp": "MEM",
+   "line": 15.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 11.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Devin Vassell",
+   "team": "SA",
+   "opp": "MIN",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "De'Andre Hunter",
+   "team": "SAC",
+   "opp": "MEM",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 19.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "De'Aaron Fox",
+   "team": "SA",
+   "opp": "MIN",
+   "line": 15.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 22.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Darius Acuff Jr.",
+   "team": "SAC",
+   "opp": "MEM",
+   "line": 22.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 38.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Cedric Coward",
+   "team": "MEM",
+   "opp": "SAC",
+   "line": 14.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 10.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Cameron Boozer",
+   "team": "MEM",
+   "opp": "SAC",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 27.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Bones Hyland",
+   "team": "MIN",
+   "opp": "SA",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 6.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Ayo Dosunmu",
+   "team": "MIN",
+   "opp": "SA",
+   "line": 15.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 27.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "AJ Green",
+   "team": "MIL",
+   "opp": "CLE",
+   "line": 6.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 0.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Zion Williamson",
+   "team": "NO",
+   "opp": "ATL",
+   "line": 21.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 15.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Trey Murphy III",
+   "team": "NO",
+   "opp": "ATL",
+   "line": 16.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 15.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Saddiq Bey",
+   "team": "NO",
+   "opp": "ATL",
+   "line": 13.5,
+   "pick": "OVER",
+   "conf": "Moderate",
+   "pts": 25.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "opp": "NO",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 6.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "opp": "NO",
+   "line": 19.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 12.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Luguentz Dort",
+   "team": "ATL",
+   "opp": "NO",
+   "line": 7.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 11.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Kingston Flemings",
+   "team": "ATL",
+   "opp": "NO",
+   "line": 7.5,
+   "pick": "UNDER",
+   "conf": "Strong",
+   "pts": 12.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Karlo Matkovic",
+   "team": "NO",
+   "opp": "ATL",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 8.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jeremiah Fears",
+   "team": "NO",
+   "opp": "ATL",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 20.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "opp": "NO",
+   "line": 22.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 13.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Herbert Jones",
+   "team": "NO",
+   "opp": "ATL",
+   "line": 6.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 11.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Dyson Daniels",
+   "team": "ATL",
+   "opp": "NO",
+   "line": 11.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 8.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Derik Queen",
+   "team": "NO",
+   "opp": "ATL",
+   "line": 11.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 8.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "CJ McCollum",
+   "team": "ATL",
+   "opp": "NO",
+   "line": 15.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 14.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Aaron Wiggins",
+   "team": "ATL",
+   "opp": "NO",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 10.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "VJ Edgecombe",
+   "team": "PHI",
+   "opp": "CHA",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 10.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Tyrese Maxey",
+   "team": "PHI",
+   "opp": "CHA",
+   "line": 27.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 38.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Sion James",
+   "team": "CHA",
+   "opp": "PHI",
+   "line": 5.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 4.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Naz Reid",
+   "team": "CHA",
+   "opp": "PHI",
+   "line": 18.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 14.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Moussa Diabate",
+   "team": "CHA",
+   "opp": "PHI",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 10.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Jaylen Brown",
+   "team": "PHI",
+   "opp": "CHA",
+   "line": 23.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 16.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Grayson Allen",
+   "team": "CHA",
+   "opp": "PHI",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 27.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Dennis Schroder",
+   "team": "CHA",
+   "opp": "PHI",
+   "line": 14.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 4.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Dean Wade",
+   "team": "PHI",
+   "opp": "CHA",
+   "line": 5.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 4.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Brandon Miller",
+   "team": "CHA",
+   "opp": "PHI",
+   "line": 25.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 24.0,
+   "won": true
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Anfernee Simons",
+   "team": "PHI",
+   "opp": "CHA",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 19.0,
+   "won": false
+  },
+  {
+   "day": "2026-10-31",
+   "player": "Adem Bona",
+   "team": "PHI",
+   "opp": "CHA",
+   "line": 6.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 2.0,
+   "won": true
+  },
   {
    "day": "2026-10-30",
    "player": "Yaxel Lendeborg",
@@ -11391,14 +12246,14 @@
  },
  "learning": {
   "active": false,
-  "trained_on": 1010,
-  "holdout": 202,
-  "base_log_loss": 0.6963,
-  "learned_log_loss": 0.69745,
+  "trained_on": 1087,
+  "holdout": 218,
+  "base_log_loss": 0.69243,
+  "learned_log_loss": 0.69121,
   "coin_log_loss": 0.69315,
-  "live_log_loss": 0.6963,
+  "live_log_loss": 0.69243,
   "gate": "failed",
-  "reason": "New weights didn't clearly beat a coin flip and the live model on the newest 202 picks (gain vs coin -0.0043 against margin 0.0124; vs live -0.0012 against 0.0101), so learning is off and picks come from the base model.",
+  "reason": "New weights didn't clearly beat a coin flip and the live model on the newest 218 picks (gain vs coin +0.0019 against margin 0.0120; vs live +0.0012 against 0.0084), so learning is off and picks come from the base model.",
   "weights": {
    "edge": 0.0,
    "stats_edge": 0.0,
@@ -11406,6 +12261,6 @@
    "listed": 0.0
   },
   "bias": 0.0,
-  "updated": "2026-10-31T15:42:50+00:00"
+  "updated": "2026-11-01T16:46:39+00:00"
  }
 }
