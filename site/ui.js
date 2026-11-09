@@ -81,7 +81,8 @@ function render(d, isExample) {
         <div class="meta">Points line <b>${d.line}</b> (${src})</div></div>
       </div>
       ${others}
-      <div class="pick ${d.pick}">${esc(pickTxt)}</div>
+      <div class="pick ${d.pick}${d.pick !== "NO PLAY" && !isPlay(d.confidence) ? " soft" : ""}">${esc(pickTxt)}</div>
+      ${d.pick !== "NO PLAY" && !isPlay(d.confidence) ? `<div class="pass">Not a play. Only Moderate and Strong picks count as plays.</div>` : d.pick !== "NO PLAY" ? `<div class="play">Play</div>` : ""}
       ${d.pick === "NO PLAY" ? `<div class="meta">${esc(d.confidence)}</div>` : `
       <div class="odds"><b>${Math.round(d.probability * 100)}%</b> chance &middot; ${esc(d.confidence)} &middot; projected <b>${d.projection.toFixed(1)}</b> pts</div>
       <div class="bar"><div style="width:${(d.p_over * 100).toFixed(1)}%"></div></div>
@@ -151,6 +152,15 @@ const FEATURE_NAMES = {
   f_teammates: "Teammates out", f_blowout: "Blowout risk",
 };
 const FLAGS = new Set(["role_change", "early_season", "listed"]);
+const PLAY_TIERS = ["Moderate", "Strong"];
+const isPlay = conf => PLAY_TIERS.includes(conf);
+// Record of the picks we'd actually play: Moderate and Strong combined.
+const playsTally = rec => {
+  const t = PLAY_TIERS.map(k => (rec.by_confidence || {})[k]).filter(Boolean)
+    .reduce((a, x) => ({ w: a.w + x.w, l: a.l + x.l, p: a.p + (x.p || 0), units: a.units + x.units }), { w: 0, l: 0, p: 0, units: 0 });
+  t.win_pct = t.w + t.l ? t.w / (t.w + t.l) : null;
+  return t;
+};
 const wl = t => `${t.w}&ndash;${t.l}${t.p ? `&ndash;${t.p}` : ""}`;
 const winPct = t => (t.win_pct == null ? "&ndash;" : `${(t.win_pct * 100).toFixed(1)}%`);
 const units = t => `${t.units >= 0 ? "+" : ""}${t.units.toFixed(2)}u`;
@@ -175,16 +185,17 @@ function renderRecord(rec) {
 
 function picksTable(picks) {
   if (!picks || !picks.length) return "";
-  const row = p => `<tr><td>${shortDay(p.day)}</td><td>${esc(p.player)} <span class="meta">${esc(p.team)} v ${esc(p.opp)}</span></td><td class="i">${p.pick === "OVER" ? "O" : "U"} ${p.line}</td><td class="i">${p.pts}</td><td class="i ${p.won === true ? "pos" : p.won === false ? "neg" : ""}">${p.won === true ? "W" : p.won === false ? "L" : "P"}</td></tr>`;
+  const row = p => `<tr><td>${shortDay(p.day)}</td><td>${esc(p.player)} <span class="meta">${esc(p.team)} v ${esc(p.opp)}</span></td><td class="i${isPlay(p.conf) ? " play-cell" : ""}">${p.pick === "OVER" ? "O" : "U"} ${p.line}</td><td class="i">${p.pts}</td><td class="i ${p.won === true ? "pos" : p.won === false ? "neg" : ""}">${p.won === true ? "W" : p.won === false ? "L" : "P"}</td></tr>`;
   const head = `<tr><td class="meta">Day</td><td class="meta">Player</td><td class="i meta">Pick</td><td class="i meta">Pts</td><td class="i meta"></td></tr>`;
   const first = picks.slice(0, 25), rest = picks.slice(25);
-  return `<div class="label" style="margin-top:16px">Pick history</div>
+  return `<div class="label" style="margin-top:16px">Pick history</div><div class="meta">Highlighted picks are plays (Moderate or Strong).</div>
     <table class="calib picks">${head}${first.map(row).join("")}</table>
     ${rest.length ? `<details><summary>Show all ${picks.length} picks</summary><table class="calib picks">${rest.map(row).join("")}</table></details>` : ""}`;
 }
 
 function eraCard(rec, top, isOld) {
   const o = rec.overall;
+  const pl = playsTally(rec);
   const since = rec.since ? shortDay(rec.since) : null;
   const beat = o.win_pct != null && o.win_pct > rec.break_even;
   const tiers = Object.entries(rec.by_confidence).map(([k, t]) =>
@@ -209,8 +220,10 @@ function eraCard(rec, top, isOld) {
   }
   return `<div class="card record">
     <h2 class="label">${title}</h2>${note}
-    <div class="headline"><span class="big">${wl(o)}</span><span class="${beat ? "pos" : "neg"}">${winPct(o)}</span><span>${units(o)}</span></div>
-    <div class="meta">Every posted points line, picked before tip-off and graded from the box score. Break-even at &minus;110 odds is ${(rec.break_even * 100).toFixed(1)}%. Units assume 1 unit per pick at &minus;110.${rec.pending ? ` ${rec.pending} picks waiting on results.` : ""}</div>
+    <div class="label">Plays (Moderate and Strong)</div>
+    <div class="headline"><span class="big">${wl(pl)}</span><span class="${pl.win_pct != null && pl.win_pct > rec.break_even ? "pos" : "neg"}">${winPct(pl)}</span><span>${units(pl)}</span></div>
+    <div class="all-lines"><span class="label">Every line</span> <b>${wl(o)}</b> <span class="${beat ? "pos" : "neg"}">${winPct(o)}</span> ${units(o)}</div>
+    <div class="meta">Plays are the picks the model is Moderate or Strong on. Every line counts all posted points lines, picked before tip-off and graded from the box score. Break-even at &minus;110 odds is ${(rec.break_even * 100).toFixed(1)}%. Units assume 1 unit per pick at &minus;110.${rec.pending ? ` ${rec.pending} picks waiting on results.` : ""}</div>
     <div class="tiles">${tiers}</div>
     <div class="cols">
       <div><div class="label">When it says&hellip;</div>
