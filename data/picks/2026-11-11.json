@@ -6112,11 +6112,11 @@
   "home": false,
   "line": 10.5,
   "prices": {
-   "over": 106,
-   "under": -136
+   "over": 101,
+   "under": -129
   },
-  "p_market": 0.4572,
-  "break_even": 0.5763,
+  "p_market": 0.469,
+  "break_even": 0.5633,
   "pick": "UNDER",
   "confidence": "Lean",
   "p_over": 0.4651,
@@ -6132,8 +6132,8 @@
    "p90": 16
   },
   "features": {
-   "edge": -0.00765,
-   "stats_edge": -0.03824,
+   "edge": -0.00764,
+   "stats_edge": -0.03819,
    "hit_rate": -0.69315,
    "role_change": 0.0,
    "early_season": 0.0,
@@ -6150,7 +6150,115 @@
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
+  "source": "live",
+  "version": 2,
+  "result": null
+ },
+ {
+  "id": "401909975|2991350",
+  "event_id": "401909975",
+  "tipoff": "2026-11-12T03:00:00+00:00",
+  "player_id": "2991350",
+  "player": "Alex Caruso",
+  "team": "OKC",
+  "opponent": "POR",
+  "home": false,
+  "line": 7.5,
+  "prices": {
+   "over": -101,
+   "under": -126
+  },
+  "p_market": 0.474,
+  "break_even": 0.5575,
+  "pick": "UNDER",
+  "confidence": "Strong",
+  "p_over": 0.3638,
+  "p_base": 0.3638,
+  "projection": 7.1,
+  "stats_projection": 5.73,
+  "sim": {
+   "over": 748,
+   "under": 1252,
+   "push": 0,
+   "median": 6,
+   "p10": 2,
+   "p90": 14
+  },
+  "features": {
+   "edge": -0.0764,
+   "stats_edge": -0.382,
+   "hit_rate": -0.69315,
+   "role_change": 0.0,
+   "early_season": 0.0,
+   "listed": 0.0,
+   "f_home": -0.0649,
+   "f_rest": -0.03678,
+   "f_defense": -0.00433,
+   "f_pace": 0.00216,
+   "f_vegas": -0.00216,
+   "f_position": -0.03245,
+   "f_opp_injuries": 0.0,
+   "f_h2h": -0.06923,
+   "f_teammates": 0.13846,
+   "f_blowout": 0.0
+  },
+  "learned": false,
+  "recorded_at": "2026-11-12T02:30:14+00:00",
+  "source": "live",
+  "version": 2,
+  "result": null
+ },
+ {
+  "id": "401909975|5241364",
+  "event_id": "401909975",
+  "tipoff": "2026-11-12T03:00:00+00:00",
+  "player_id": "5241364",
+  "player": "Bennett Stirtz",
+  "team": "OKC",
+  "opponent": "POR",
+  "home": false,
+  "line": 8.5,
+  "prices": {
+   "over": -118,
+   "under": -108
+  },
+  "p_market": 0.5104,
+  "break_even": 0.5413,
+  "pick": "OVER",
+  "confidence": "Lean",
+  "p_over": 0.5513,
+  "p_base": 0.5513,
+  "projection": 8.9,
+  "stats_projection": 10.35,
+  "sim": {
+   "over": 1121,
+   "under": 879,
+   "push": 0,
+   "median": 9,
+   "p10": 2,
+   "p90": 13
+  },
+  "features": {
+   "edge": 0.10154,
+   "stats_edge": 0.50772,
+   "hit_rate": 0.09531,
+   "role_change": 0.0,
+   "early_season": 0.0,
+   "listed": 0.0,
+   "f_home": 0.04663,
+   "f_rest": -0.07955,
+   "f_defense": -0.01097,
+   "f_pace": 0.00549,
+   "f_vegas": -0.00549,
+   "f_position": -0.06858,
+   "f_opp_injuries": 0.0,
+   "f_h2h": 0.14813,
+   "f_teammates": 0.2222,
+   "f_blowout": 0.0
+  },
+  "learned": false,
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6166,11 +6274,11 @@
   "home": true,
   "line": 19.5,
   "prices": {
-   "over": -116,
-   "under": -110
+   "over": -125,
+   "under": -102
   },
-  "p_market": 0.5062,
-  "break_even": 0.537,
+  "p_market": 0.5239,
+  "break_even": 0.5556,
   "pick": "OVER",
   "confidence": "Moderate",
   "p_over": 0.6094,
@@ -6186,8 +6294,8 @@
    "p90": 26
   },
   "features": {
-   "edge": 0.00414,
-   "stats_edge": 0.02071,
+   "edge": 0.00416,
+   "stats_edge": 0.02081,
    "hit_rate": 0.40547,
    "role_change": 0.0,
    "early_season": 0.0,
@@ -6204,7 +6312,7 @@
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6220,11 +6328,11 @@
   "home": true,
   "line": 22.5,
   "prices": {
-   "over": -105,
-   "under": -121
+   "over": -120,
+   "under": -106
   },
-  "p_market": 0.4833,
-  "break_even": 0.5475,
+  "p_market": 0.5146,
+  "break_even": 0.5146,
   "pick": "UNDER",
   "confidence": "Coin flip",
   "p_over": 0.4935,
@@ -6240,8 +6348,8 @@
    "p90": 31
   },
   "features": {
-   "edge": -0.01101,
-   "stats_edge": -0.05504,
+   "edge": -0.01099,
+   "stats_edge": -0.05494,
    "hit_rate": 0.40547,
    "role_change": 0.0,
    "early_season": 0.0,
@@ -6258,7 +6366,7 @@
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6274,11 +6382,11 @@
   "home": true,
   "line": 10.5,
   "prices": {
-   "over": -113,
-   "under": -113
+   "over": -127,
+   "under": 100
   },
-  "p_market": 0.5,
-  "break_even": 0.5305,
+  "p_market": 0.5281,
+  "break_even": 0.5,
   "pick": "UNDER",
   "confidence": "Lean",
   "p_over": 0.4693,
@@ -6294,8 +6402,8 @@
    "p90": 19
   },
   "features": {
-   "edge": 0.00566,
-   "stats_edge": 0.02829,
+   "edge": 0.00567,
+   "stats_edge": 0.02834,
    "hit_rate": 0.0,
    "role_change": 0.0,
    "early_season": 0.0,
@@ -6312,7 +6420,7 @@
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6326,47 +6434,47 @@
   "team": "OKC",
   "opponent": "POR",
   "home": false,
-  "line": 8.5,
+  "line": 9.5,
   "prices": {
-   "over": -122,
-   "under": -104
+   "over": -110,
+   "under": -116
   },
-  "p_market": 0.5188,
-  "break_even": 0.5098,
+  "p_market": 0.4938,
+  "break_even": 0.537,
   "pick": "UNDER",
   "confidence": "Lean",
-  "p_over": 0.4593,
-  "p_base": 0.4593,
-  "projection": 8.2,
+  "p_over": 0.4525,
+  "p_base": 0.4525,
+  "projection": 9.0,
   "stats_projection": 7.03,
   "sim": {
-   "over": 936,
-   "under": 1064,
+   "over": 940,
+   "under": 1060,
    "push": 0,
-   "median": 8,
+   "median": 9,
    "p10": 0,
-   "p90": 14
+   "p90": 18
   },
   "features": {
-   "edge": -0.056,
-   "stats_edge": -0.28,
-   "hit_rate": -0.26826,
+   "edge": -0.07498,
+   "stats_edge": -0.37488,
+   "hit_rate": -0.40547,
    "role_change": 0.0,
    "early_season": 0.0,
    "listed": 0.0,
-   "f_home": 0.01911,
-   "f_rest": -0.03631,
-   "f_defense": -0.00382,
-   "f_pace": 0.00382,
-   "f_vegas": -0.00191,
-   "f_position": 0.0707,
+   "f_home": 0.01521,
+   "f_rest": -0.02889,
+   "f_defense": -0.00304,
+   "f_pace": 0.00304,
+   "f_vegas": -0.00152,
+   "f_position": 0.05627,
    "f_opp_injuries": 0.0,
-   "f_h2h": -0.02866,
-   "f_teammates": 0.13185,
+   "f_h2h": -0.02281,
+   "f_teammates": 0.10493,
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6382,11 +6490,11 @@
   "home": false,
   "line": 15.5,
   "prices": {
-   "over": -110,
-   "under": -116
+   "over": -117,
+   "under": -109
   },
-  "p_market": 0.4938,
-  "break_even": 0.537,
+  "p_market": 0.5083,
+  "break_even": 0.5215,
   "pick": "UNDER",
   "confidence": "Moderate",
   "p_over": 0.4013,
@@ -6402,8 +6510,8 @@
    "p90": 28
   },
   "features": {
-   "edge": -0.03302,
-   "stats_edge": -0.16509,
+   "edge": -0.03301,
+   "stats_edge": -0.16505,
    "hit_rate": -0.69315,
    "role_change": 0.0,
    "early_season": 0.0,
@@ -6420,7 +6528,7 @@
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6434,47 +6542,47 @@
   "team": "POR",
   "opponent": "OKC",
   "home": true,
-  "line": 11.5,
+  "line": 12.5,
   "prices": {
-   "over": -124,
-   "under": -103
+   "over": -107,
+   "under": -119
   },
-  "p_market": 0.5218,
-  "break_even": 0.5074,
+  "p_market": 0.4875,
+  "break_even": 0.5434,
   "pick": "UNDER",
   "confidence": "Lean",
-  "p_over": 0.4542,
-  "p_base": 0.4542,
-  "projection": 11.8,
+  "p_over": 0.4315,
+  "p_base": 0.4315,
+  "projection": 12.6,
   "stats_projection": 12.94,
   "sim": {
-   "over": 789,
-   "under": 1211,
+   "over": 773,
+   "under": 1227,
    "push": 0,
-   "median": 10,
-   "p10": 6,
-   "p90": 20
+   "median": 11,
+   "p10": 7,
+   "p90": 21
   },
   "features": {
-   "edge": 0.05388,
-   "stats_edge": 0.26938,
-   "hit_rate": 0.54654,
+   "edge": 0.01551,
+   "stats_edge": 0.07756,
+   "hit_rate": 0.26826,
    "role_change": 0.0,
    "early_season": 0.0,
    "listed": 0.0,
-   "f_home": -0.09008,
-   "f_rest": -0.07507,
-   "f_defense": -0.03941,
-   "f_pace": -0.00751,
-   "f_vegas": -0.06756,
-   "f_position": -0.01689,
-   "f_opp_injuries": 0.03378,
-   "f_h2h": 0.01877,
-   "f_teammates": 0.08445,
+   "f_home": -0.08543,
+   "f_rest": -0.07119,
+   "f_defense": -0.03737,
+   "f_pace": -0.00712,
+   "f_vegas": -0.06407,
+   "f_position": -0.01602,
+   "f_opp_injuries": 0.03203,
+   "f_h2h": 0.0178,
+   "f_teammates": 0.08009,
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6490,11 +6598,11 @@
   "home": false,
   "line": 8.5,
   "prices": {
-   "over": -123,
-   "under": -104
+   "over": -127,
+   "under": -101
   },
-  "p_market": 0.5197,
-  "break_even": 0.5098,
+  "p_market": 0.5268,
+  "break_even": 0.5025,
   "pick": "UNDER",
   "confidence": "Lean",
   "p_over": 0.458,
@@ -6510,25 +6618,133 @@
    "p90": 14
   },
   "features": {
-   "edge": -0.07153,
-   "stats_edge": -0.35764,
+   "edge": -0.07151,
+   "stats_edge": -0.35753,
    "hit_rate": -0.54654,
    "role_change": 0.0,
    "early_season": 0.0,
    "listed": 0.0,
-   "f_home": 0.05983,
-   "f_rest": -0.04487,
+   "f_home": 0.05982,
+   "f_rest": -0.04486,
    "f_defense": -0.00641,
    "f_pace": 0.00427,
    "f_vegas": -0.00214,
-   "f_position": -0.03846,
+   "f_position": -0.03845,
    "f_opp_injuries": 0.0,
-   "f_h2h": -0.08547,
-   "f_teammates": 0.12393,
+   "f_h2h": -0.08545,
+   "f_teammates": 0.12391,
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
+  "source": "live",
+  "version": 2,
+  "result": null
+ },
+ {
+  "id": "401909975|4066211",
+  "event_id": "401909975",
+  "tipoff": "2026-11-12T03:00:00+00:00",
+  "player_id": "4066211",
+  "player": "Robert Williams III",
+  "team": "POR",
+  "opponent": "OKC",
+  "home": true,
+  "line": 4.5,
+  "prices": {
+   "over": -120,
+   "under": -106
+  },
+  "p_market": 0.5146,
+  "break_even": 0.5146,
+  "pick": "UNDER",
+  "confidence": "Lean",
+  "p_over": 0.439,
+  "p_base": 0.439,
+  "projection": 4.7,
+  "stats_projection": 5.74,
+  "sim": {
+   "over": 793,
+   "under": 1207,
+   "push": 0,
+   "median": 4,
+   "p10": 1,
+   "p90": 11
+  },
+  "features": {
+   "edge": 0.06422,
+   "stats_edge": 0.3211,
+   "hit_rate": 0.26826,
+   "role_change": 0.0,
+   "early_season": 0.0,
+   "listed": 0.0,
+   "f_home": -0.04661,
+   "f_rest": -0.04919,
+   "f_defense": -0.02589,
+   "f_pace": -0.00518,
+   "f_vegas": -0.04402,
+   "f_position": -0.03107,
+   "f_opp_injuries": 0.0233,
+   "f_h2h": -0.09062,
+   "f_teammates": 0.05437,
+   "f_blowout": 0.0
+  },
+  "learned": false,
+  "recorded_at": "2026-11-12T02:30:14+00:00",
+  "source": "live",
+  "version": 2,
+  "result": null
+ },
+ {
+  "id": "401909975|4683678",
+  "event_id": "401909975",
+  "tipoff": "2026-11-12T03:00:00+00:00",
+  "player_id": "4683678",
+  "player": "Scoot Henderson",
+  "team": "POR",
+  "opponent": "OKC",
+  "home": true,
+  "line": 10.5,
+  "prices": {
+   "over": -115,
+   "under": -111
+  },
+  "p_market": 0.5042,
+  "break_even": 0.5349,
+  "pick": "OVER",
+  "confidence": "Coin flip",
+  "p_over": 0.5001,
+  "p_base": 0.5001,
+  "projection": 10.5,
+  "stats_projection": 10.36,
+  "sim": {
+   "over": 978,
+   "under": 1022,
+   "push": 0,
+   "median": 10,
+   "p10": 3,
+   "p90": 17
+  },
+  "features": {
+   "edge": -0.00588,
+   "stats_edge": -0.02938,
+   "hit_rate": 0.13353,
+   "role_change": 0.0,
+   "early_season": 0.0,
+   "listed": 0.0,
+   "f_home": 0.10537,
+   "f_rest": -0.06687,
+   "f_defense": -0.03445,
+   "f_pace": -0.00608,
+   "f_vegas": -0.06079,
+   "f_position": -0.01621,
+   "f_opp_injuries": 0.0304,
+   "f_h2h": -0.0304,
+   "f_teammates": 0.07903,
+   "f_blowout": 0.0
+  },
+  "learned": false,
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6564,8 +6780,8 @@
    "p90": 49
   },
   "features": {
-   "edge": -0.03806,
-   "stats_edge": -0.19031,
+   "edge": -0.03804,
+   "stats_edge": -0.19022,
    "hit_rate": -0.8473,
    "role_change": 0.0,
    "early_season": 0.0,
@@ -6582,7 +6798,7 @@
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6598,11 +6814,11 @@
   "home": true,
   "line": 8.5,
   "prices": {
-   "over": -127,
-   "under": 100
+   "over": -105,
+   "under": -122
   },
-  "p_market": 0.5281,
-  "break_even": 0.5,
+  "p_market": 0.4824,
+  "break_even": 0.5495,
   "pick": "UNDER",
   "confidence": "Strong",
   "p_over": 0.3291,
@@ -6619,7 +6835,7 @@
   },
   "features": {
    "edge": -0.05527,
-   "stats_edge": -0.27637,
+   "stats_edge": -0.27634,
    "hit_rate": -1.18958,
    "role_change": 0.0,
    "early_season": 0.0,
@@ -6636,7 +6852,7 @@
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
@@ -6652,11 +6868,11 @@
   "home": true,
   "line": 12.5,
   "prices": {
-   "over": -107,
-   "under": -119
+   "over": -104,
+   "under": -122
   },
-  "p_market": 0.4875,
-  "break_even": 0.5434,
+  "p_market": 0.4812,
+  "break_even": 0.5495,
   "pick": "UNDER",
   "confidence": "Coin flip",
   "p_over": 0.4772,
@@ -6672,8 +6888,8 @@
    "p90": 21
   },
   "features": {
-   "edge": -0.01011,
-   "stats_edge": -0.05054,
+   "edge": -0.0101,
+   "stats_edge": -0.05048,
    "hit_rate": 0.13353,
    "role_change": 0.0,
    "early_season": 0.0,
@@ -6690,7 +6906,7 @@
    "f_blowout": 0.0
   },
   "learned": false,
-  "recorded_at": "2026-11-11T22:14:29+00:00",
+  "recorded_at": "2026-11-12T02:30:14+00:00",
   "source": "live",
   "version": 2,
   "result": null
