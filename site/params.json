@@ -1,5 +1,5 @@
 {
- "trained_on": 2865,
+ "trained_on": 2982,
  "active": false,
  "bias": 0.0,
  "weights": {
@@ -14,14 +14,14 @@
   "hit_rate",
   "listed"
  ],
- "holdout": 573,
+ "holdout": 597,
  "coin_log_loss": 0.69315,
- "live_log_loss": 0.69739,
- "learned_log_loss": 0.69691,
- "base_log_loss": 0.69739,
- "margin_vs_coin": 0.00721,
- "margin_vs_live": 0.00426,
+ "live_log_loss": 0.69763,
+ "learned_log_loss": 0.69526,
+ "base_log_loss": 0.69763,
+ "margin_vs_coin": 0.00661,
+ "margin_vs_live": 0.00396,
  "gate": "failed",
- "reason": "New weights didn't clearly beat a coin flip and the live model on the newest 573 picks (gain vs coin -0.0038 against margin 0.0072; vs live +0.0005 against 0.0043), so learning is off and picks come from the base model.",
- "updated": "2026-11-20T18:33:12+00:00"
+ "reason": "New weights didn't clearly beat a coin flip and the live model on the newest 597 picks (gain vs coin -0.0021 against margin 0.0066; vs live +0.0024 against 0.0040), so learning is off and picks come from the base model.",
+ "updated": "2026-11-21T17:24:07+00:00"
 }
