@@ -1,79 +1,71 @@
 {
- "updated": "2026-11-22T17:46:11+00:00",
+ "updated": "2026-11-23T22:00:01+00:00",
  "version": 2,
  "version_since": "2026-10-30T05:33:40+00:00",
  "break_even": 0.5238,
  "since": "2026-10-30",
- "until": "2026-11-21",
+ "until": "2026-11-22",
  "overall": {
-  "w": 1076,
-  "l": 1069,
+  "w": 1127,
+  "l": 1100,
   "p": 0,
-  "win_pct": 0.5016,
-  "units": -121.52
+  "win_pct": 0.5061,
+  "units": -107.31
  },
  "base_model": {
-  "w": 1076,
-  "l": 1069,
+  "w": 1127,
+  "l": 1100,
   "p": 0,
-  "win_pct": 0.5016,
-  "units": -121.52
+  "win_pct": 0.5061,
+  "units": -107.31
  },
  "by_confidence": {
   "Coin flip": {
-   "w": 401,
-   "l": 462,
+   "w": 420,
+   "l": 472,
    "p": 0,
-   "win_pct": 0.4647,
-   "units": -106.4
+   "win_pct": 0.4709,
+   "units": -99.44
   },
   "Lean": {
-   "w": 413,
-   "l": 398,
+   "w": 432,
+   "l": 409,
    "p": 0,
-   "win_pct": 0.5092,
-   "units": -35.48
+   "win_pct": 0.5137,
+   "units": -29.68
   },
   "Moderate": {
-   "w": 232,
-   "l": 174,
+   "w": 241,
+   "l": 183,
    "p": 0,
-   "win_pct": 0.5714,
-   "units": 28.9
+   "win_pct": 0.5684,
+   "units": 27.85
   },
   "Strong": {
-   "w": 30,
-   "l": 35,
+   "w": 34,
+   "l": 36,
    "p": 0,
-   "win_pct": 0.4615,
-   "units": -8.55
+   "win_pct": 0.4857,
+   "units": -6.05
   }
  },
  "by_side": {
   "OVER": {
-   "w": 337,
-   "l": 397,
+   "w": 348,
+   "l": 402,
    "p": 0,
-   "win_pct": 0.4591,
-   "units": -100.37
+   "win_pct": 0.464,
+   "units": -95.62
   },
   "UNDER": {
-   "w": 739,
-   "l": 672,
+   "w": 779,
+   "l": 698,
    "p": 0,
-   "win_pct": 0.5237,
-   "units": -21.16
+   "win_pct": 0.5274,
+   "units": -11.69
   }
  },
  "by_day": [
-  {
-   "day": "2026-11-08",
-   "w": 42,
-   "l": 47,
-   "p": 0,
-   "win_pct": 0.4719,
-   "units": -10.3
-  },
   {
    "day": "2026-11-09",
    "w": 47,
@@ -177,40 +169,950 @@
    "p": 0,
    "win_pct": 0.5172,
    "units": -1.63
+  },
+  {
+   "day": "2026-11-22",
+   "w": 51,
+   "l": 31,
+   "p": 0,
+   "win_pct": 0.622,
+   "units": 14.21
   }
  ],
  "calibration": [
   {
    "lo": 0.5,
    "hi": 0.53,
-   "n": 859,
+   "n": 888,
    "predicted": 0.5145,
-   "actual": 0.4645
+   "actual": 0.4707
   },
   {
    "lo": 0.53,
    "hi": 0.57,
-   "n": 814,
+   "n": 844,
    "predicted": 0.5475,
-   "actual": 0.5086
+   "actual": 0.513
   },
   {
    "lo": 0.57,
    "hi": 0.62,
-   "n": 377,
+   "n": 395,
    "predicted": 0.5902,
-   "actual": 0.5623
+   "actual": 0.5595
   },
   {
    "lo": 0.62,
    "hi": 1.0,
-   "n": 95,
-   "predicted": 0.6493,
-   "actual": 0.5368
+   "n": 100,
+   "predicted": 0.6486,
+   "actual": 0.55
   }
  ],
- "pending": 13,
+ "pending": 0,
  "picks": [
+  {
+   "day": "2026-11-22",
+   "player": "Yaxel Lendeborg",
+   "team": "GS",
+   "opp": "BOS",
+   "line": 19.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 12.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Will Richard",
+   "team": "GS",
+   "opp": "BOS",
+   "line": 7.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 3.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Sam Hauser",
+   "team": "BOS",
+   "opp": "GS",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 3.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Payton Pritchard",
+   "team": "BOS",
+   "opp": "GS",
+   "line": 15.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 5.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Neemias Queta",
+   "team": "BOS",
+   "opp": "GS",
+   "line": 9.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 6.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Jayson Tatum",
+   "team": "BOS",
+   "opp": "GS",
+   "line": 27.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 27.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Gui Santos",
+   "team": "GS",
+   "opp": "BOS",
+   "line": 7.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 13.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Draymond Green",
+   "team": "GS",
+   "opp": "BOS",
+   "line": 4.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 9.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Derrick White",
+   "team": "BOS",
+   "opp": "GS",
+   "line": 14.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 14.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "De'Anthony Melton",
+   "team": "GS",
+   "opp": "BOS",
+   "line": 10.5,
+   "pick": "UNDER",
+   "conf": "Strong",
+   "pts": 2.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Charles Bassey",
+   "team": "GS",
+   "opp": "BOS",
+   "line": 7.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 13.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Brandin Podziemski",
+   "team": "GS",
+   "opp": "BOS",
+   "line": 15.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 18.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Baylor Scheierman",
+   "team": "BOS",
+   "opp": "GS",
+   "line": 7.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 3.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Pascal Siakam",
+   "team": "IND",
+   "opp": "NY",
+   "line": 20.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 25.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Obi Toppin",
+   "team": "IND",
+   "opp": "NY",
+   "line": 11.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Mikal Bridges",
+   "team": "NY",
+   "opp": "IND",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 8.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Landry Shamet",
+   "team": "NY",
+   "opp": "IND",
+   "line": 11.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 17.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Kelly Oubre Jr.",
+   "team": "IND",
+   "opp": "NY",
+   "line": 12.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 15.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Karl-Anthony Towns",
+   "team": "NY",
+   "opp": "IND",
+   "line": 20.5,
+   "pick": "OVER",
+   "conf": "Moderate",
+   "pts": 30.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Josh Hart",
+   "team": "NY",
+   "opp": "IND",
+   "line": 9.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 10.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Jalen Brunson",
+   "team": "NY",
+   "opp": "IND",
+   "line": 28.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 22.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Ivica Zubac",
+   "team": "IND",
+   "opp": "NY",
+   "line": 11.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 10.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Andrew Nembhard",
+   "team": "IND",
+   "opp": "NY",
+   "line": 14.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 16.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Aaron Nesmith",
+   "team": "IND",
+   "opp": "NY",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Zaccharie Risacher",
+   "team": "DAL",
+   "opp": "UTAH",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 15.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Wendell Carter Jr.",
+   "team": "ORL",
+   "opp": "WSH",
+   "line": 11.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Tristan da Silva",
+   "team": "ORL",
+   "opp": "WSH",
+   "line": 10.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 18.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Tre Jones",
+   "team": "CHI",
+   "opp": "DEN",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Trae Young",
+   "team": "WSH",
+   "opp": "ORL",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 11.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Patrick Williams",
+   "team": "CHI",
+   "opp": "DEN",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 2.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Nikola Jokic",
+   "team": "DEN",
+   "opp": "CHI",
+   "line": 25.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 37.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Naji Marshall",
+   "team": "DAL",
+   "opp": "UTAH",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 6.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Matas Buzelis",
+   "team": "CHI",
+   "opp": "DEN",
+   "line": 17.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 21.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Kyshawn George",
+   "team": "WSH",
+   "opp": "ORL",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 24.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Kyrie Irving",
+   "team": "DAL",
+   "opp": "UTAH",
+   "line": 22.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 16.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Keyonte George",
+   "team": "UTAH",
+   "opp": "DAL",
+   "line": 23.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 15.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Josh Green",
+   "team": "UTAH",
+   "opp": "DAL",
+   "line": 5.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 0.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Josh Giddey",
+   "team": "CHI",
+   "opp": "DEN",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 23.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Jaxson Hayes",
+   "team": "UTAH",
+   "opp": "DAL",
+   "line": 9.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 8.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Jamal Murray",
+   "team": "DEN",
+   "opp": "CHI",
+   "line": 23.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 45.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Jalen Suggs",
+   "team": "ORL",
+   "opp": "WSH",
+   "line": 11.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Jalen Smith",
+   "team": "CHI",
+   "opp": "DEN",
+   "line": 13.5,
+   "pick": "OVER",
+   "conf": "Moderate",
+   "pts": 26.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Isaac Okoro",
+   "team": "CHI",
+   "opp": "DEN",
+   "line": 9.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 11.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Franz Wagner",
+   "team": "ORL",
+   "opp": "WSH",
+   "line": 25.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 16.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Desmond Bane",
+   "team": "ORL",
+   "opp": "WSH",
+   "line": 19.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 17.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "DeMar DeRozan",
+   "team": "DEN",
+   "opp": "CHI",
+   "line": 11.5,
+   "pick": "UNDER",
+   "conf": "Strong",
+   "pts": 4.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Darryn Peterson",
+   "team": "UTAH",
+   "opp": "DAL",
+   "line": 18.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 6.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Daniel Gafford",
+   "team": "DAL",
+   "opp": "UTAH",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Strong",
+   "pts": 10.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Cooper Flagg",
+   "team": "DAL",
+   "opp": "UTAH",
+   "line": 25.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 28.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Christian Braun",
+   "team": "DEN",
+   "opp": "CHI",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 21.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Cameron Johnson",
+   "team": "DEN",
+   "opp": "CHI",
+   "line": 13.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 16.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Caleb Martin",
+   "team": "DAL",
+   "opp": "UTAH",
+   "line": 5.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 13.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Buddy Hield",
+   "team": "CHI",
+   "opp": "DEN",
+   "line": 11.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 33.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Brice Sensabaugh",
+   "team": "UTAH",
+   "opp": "DAL",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 10.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Bilal Coulibaly",
+   "team": "WSH",
+   "opp": "ORL",
+   "line": 6.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 12.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Anthony Davis",
+   "team": "WSH",
+   "opp": "ORL",
+   "line": 23.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 22.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Anthony Black",
+   "team": "ORL",
+   "opp": "WSH",
+   "line": 15.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 14.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Alex Sarr",
+   "team": "WSH",
+   "opp": "ORL",
+   "line": 10.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 10.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Ace Bailey",
+   "team": "UTAH",
+   "opp": "DAL",
+   "line": 14.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 16.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Aaron Gordon",
+   "team": "DEN",
+   "opp": "CHI",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 18.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "AJ Dybantsa",
+   "team": "WSH",
+   "opp": "ORL",
+   "line": 17.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 16.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Pelle Larsson",
+   "team": "MIA",
+   "opp": "OKC",
+   "line": 10.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 21.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Klay Thompson",
+   "team": "MIA",
+   "opp": "OKC",
+   "line": 14.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Jared McCain",
+   "team": "OKC",
+   "opp": "MIA",
+   "line": 18.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 20.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Isaiah Hartenstein",
+   "team": "OKC",
+   "opp": "MIA",
+   "line": 9.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 2.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Davion Mitchell",
+   "team": "MIA",
+   "opp": "OKC",
+   "line": 14.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 14.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Bobby Portis",
+   "team": "MIA",
+   "opp": "OKC",
+   "line": 8.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 10.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Bam Adebayo",
+   "team": "MIA",
+   "opp": "OKC",
+   "line": 19.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 24.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Andrew Wiggins",
+   "team": "MIA",
+   "opp": "OKC",
+   "line": 9.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 5.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Ajay Mitchell",
+   "team": "OKC",
+   "opp": "MIA",
+   "line": 20.5,
+   "pick": "UNDER",
+   "conf": "Strong",
+   "pts": 17.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Paul Reed",
+   "team": "DET",
+   "opp": "ATL",
+   "line": 10.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 16.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Onyeka Okongwu",
+   "team": "ATL",
+   "opp": "DET",
+   "line": 14.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 6.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Nickeil Alexander-Walker",
+   "team": "ATL",
+   "opp": "DET",
+   "line": 20.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 27.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Kevin Huerter",
+   "team": "DET",
+   "opp": "ATL",
+   "line": 14.5,
+   "pick": "UNDER",
+   "conf": "Strong",
+   "pts": 2.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "John Collins",
+   "team": "DET",
+   "opp": "ATL",
+   "line": 10.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 18.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Jalen Johnson",
+   "team": "ATL",
+   "opp": "DET",
+   "line": 19.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 12.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Isaiah Joe",
+   "team": "DET",
+   "opp": "ATL",
+   "line": 8.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 19.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Dyson Daniels",
+   "team": "ATL",
+   "opp": "DET",
+   "line": 11.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 5.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Daniss Jenkins",
+   "team": "DET",
+   "opp": "ATL",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 11.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Cade Cunningham",
+   "team": "DET",
+   "opp": "ATL",
+   "line": 26.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 5.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Ausar Thompson",
+   "team": "DET",
+   "opp": "ATL",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 18.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-22",
+   "player": "Aaron Wiggins",
+   "team": "ATL",
+   "opp": "DET",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 9.0,
+   "won": true
+  },
   {
    "day": "2026-11-21",
    "player": "Zach LaVine",
@@ -33737,14 +34639,14 @@
  },
  "learning": {
   "active": false,
-  "trained_on": 3040,
-  "holdout": 608,
-  "base_log_loss": 0.69744,
-  "learned_log_loss": 0.69419,
+  "trained_on": 3123,
+  "holdout": 625,
+  "base_log_loss": 0.69705,
+  "learned_log_loss": 0.69473,
   "coin_log_loss": 0.69315,
-  "live_log_loss": 0.69744,
+  "live_log_loss": 0.69705,
   "gate": "failed",
-  "reason": "New weights didn't clearly beat a coin flip and the live model on the newest 608 picks (gain vs coin -0.0010 against margin 0.0068; vs live +0.0032 against 0.0042), so learning is off and picks come from the base model.",
+  "reason": "New weights didn't clearly beat a coin flip and the live model on the newest 625 picks (gain vs coin -0.0016 against margin 0.0066; vs live +0.0023 against 0.0042), so learning is off and picks come from the base model.",
   "weights": {
    "edge": 0.0,
    "stats_edge": 0.0,
@@ -33752,6 +34654,6 @@
    "listed": 0.0
   },
   "bias": 0.0,
-  "updated": "2026-11-22T17:46:11+00:00"
+  "updated": "2026-11-23T22:00:01+00:00"
  }
 }
