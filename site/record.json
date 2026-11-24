@@ -1,45 +1,45 @@
 {
- "updated": "2026-11-23T22:00:01+00:00",
+ "updated": "2026-11-24T20:37:05+00:00",
  "version": 2,
  "version_since": "2026-10-30T05:33:40+00:00",
  "break_even": 0.5238,
  "since": "2026-10-30",
- "until": "2026-11-22",
+ "until": "2026-11-23",
  "overall": {
-  "w": 1127,
-  "l": 1100,
+  "w": 1142,
+  "l": 1111,
   "p": 0,
-  "win_pct": 0.5061,
-  "units": -107.31
+  "win_pct": 0.5069,
+  "units": -105.29
  },
  "base_model": {
-  "w": 1127,
-  "l": 1100,
+  "w": 1142,
+  "l": 1111,
   "p": 0,
-  "win_pct": 0.5061,
-  "units": -107.31
+  "win_pct": 0.5069,
+  "units": -105.29
  },
  "by_confidence": {
   "Coin flip": {
-   "w": 420,
-   "l": 472,
+   "w": 426,
+   "l": 477,
    "p": 0,
-   "win_pct": 0.4709,
-   "units": -99.44
+   "win_pct": 0.4718,
+   "units": -99.21
   },
   "Lean": {
-   "w": 432,
-   "l": 409,
+   "w": 437,
+   "l": 411,
    "p": 0,
-   "win_pct": 0.5137,
-   "units": -29.68
+   "win_pct": 0.5153,
+   "units": -27.33
   },
   "Moderate": {
-   "w": 241,
-   "l": 183,
+   "w": 245,
+   "l": 187,
    "p": 0,
-   "win_pct": 0.5684,
-   "units": 27.85
+   "win_pct": 0.5671,
+   "units": 27.3
   },
   "Strong": {
    "w": 34,
@@ -51,29 +51,21 @@
  },
  "by_side": {
   "OVER": {
-   "w": 348,
-   "l": 402,
+   "w": 353,
+   "l": 404,
    "p": 0,
-   "win_pct": 0.464,
-   "units": -95.62
+   "win_pct": 0.4663,
+   "units": -93.43
   },
   "UNDER": {
-   "w": 779,
-   "l": 698,
+   "w": 789,
+   "l": 707,
    "p": 0,
    "win_pct": 0.5274,
-   "units": -11.69
+   "units": -11.86
   }
  },
  "by_day": [
-  {
-   "day": "2026-11-09",
-   "w": 47,
-   "l": 57,
-   "p": 0,
-   "win_pct": 0.4519,
-   "units": -14.97
-  },
   {
    "day": "2026-11-10",
    "w": 52,
@@ -177,40 +169,334 @@
    "p": 0,
    "win_pct": 0.622,
    "units": 14.21
+  },
+  {
+   "day": "2026-11-23",
+   "w": 15,
+   "l": 11,
+   "p": 0,
+   "win_pct": 0.5769,
+   "units": 2.02
   }
  ],
  "calibration": [
   {
    "lo": 0.5,
    "hi": 0.53,
-   "n": 888,
-   "predicted": 0.5145,
-   "actual": 0.4707
+   "n": 899,
+   "predicted": 0.5146,
+   "actual": 0.4716
   },
   {
    "lo": 0.53,
    "hi": 0.57,
-   "n": 844,
-   "predicted": 0.5475,
-   "actual": 0.513
+   "n": 851,
+   "predicted": 0.5476,
+   "actual": 0.5147
   },
   {
    "lo": 0.57,
    "hi": 0.62,
-   "n": 395,
+   "n": 402,
    "predicted": 0.5902,
-   "actual": 0.5595
+   "actual": 0.5597
   },
   {
    "lo": 0.62,
    "hi": 1.0,
-   "n": 100,
-   "predicted": 0.6486,
-   "actual": 0.55
+   "n": 101,
+   "predicted": 0.6484,
+   "actual": 0.5446
   }
  ],
- "pending": 0,
+ "pending": 13,
  "picks": [
+  {
+   "day": "2026-11-23",
+   "player": "Ziaire Williams",
+   "team": "LAL",
+   "opp": "UTAH",
+   "line": 7.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Zach LaVine",
+   "team": "SAC",
+   "opp": "SA",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 18.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Walker Kessler",
+   "team": "LAL",
+   "opp": "UTAH",
+   "line": 13.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 10.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Svi Mykhailiuk",
+   "team": "UTAH",
+   "opp": "LAL",
+   "line": 9.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 4.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Stephon Castle",
+   "team": "SA",
+   "opp": "SAC",
+   "line": 22.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 28.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Sandro Mamukelashvili",
+   "team": "LAL",
+   "opp": "UTAH",
+   "line": 9.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 2.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Quentin Grimes",
+   "team": "LAL",
+   "opp": "UTAH",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Precious Achiuwa",
+   "team": "SAC",
+   "opp": "SA",
+   "line": 5.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Matisse Thybulle",
+   "team": "LAL",
+   "opp": "UTAH",
+   "line": 6.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 14.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Luke Kornet",
+   "team": "SA",
+   "opp": "SAC",
+   "line": 7.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 18.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Luka Doncic",
+   "team": "LAL",
+   "opp": "UTAH",
+   "line": 35.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 28.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Keyonte George",
+   "team": "UTAH",
+   "opp": "LAL",
+   "line": 20.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 14.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Keldon Johnson",
+   "team": "SA",
+   "opp": "SAC",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 12.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Keegan Murray",
+   "team": "SAC",
+   "opp": "SA",
+   "line": 12.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 14.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Julian Champagnie",
+   "team": "SA",
+   "opp": "SAC",
+   "line": 14.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 22.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Josh Green",
+   "team": "UTAH",
+   "opp": "LAL",
+   "line": 5.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 8.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Jake LaRavia",
+   "team": "LAL",
+   "opp": "UTAH",
+   "line": 5.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 15.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Harrison Barnes",
+   "team": "SA",
+   "opp": "SAC",
+   "line": 10.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 9.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Domantas Sabonis",
+   "team": "SAC",
+   "opp": "SA",
+   "line": 13.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 20.0,
+   "won": false
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Devin Vassell",
+   "team": "SA",
+   "opp": "SAC",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Moderate",
+   "pts": 16.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "De'Andre Hunter",
+   "team": "SAC",
+   "opp": "SA",
+   "line": 13.5,
+   "pick": "OVER",
+   "conf": "Lean",
+   "pts": 15.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Darryn Peterson",
+   "team": "UTAH",
+   "opp": "LAL",
+   "line": 16.5,
+   "pick": "UNDER",
+   "conf": "Lean",
+   "pts": 13.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Darius Acuff Jr.",
+   "team": "SAC",
+   "opp": "SA",
+   "line": 23.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 12.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Collin Sexton",
+   "team": "LAL",
+   "opp": "UTAH",
+   "line": 11.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 12.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Brice Sensabaugh",
+   "team": "UTAH",
+   "opp": "LAL",
+   "line": 10.5,
+   "pick": "UNDER",
+   "conf": "Coin flip",
+   "pts": 6.0,
+   "won": true
+  },
+  {
+   "day": "2026-11-23",
+   "player": "Ace Bailey",
+   "team": "UTAH",
+   "opp": "LAL",
+   "line": 13.5,
+   "pick": "OVER",
+   "conf": "Coin flip",
+   "pts": 18.0,
+   "won": true
+  },
   {
    "day": "2026-11-22",
    "player": "Yaxel Lendeborg",
@@ -34639,14 +34925,14 @@
  },
  "learning": {
   "active": false,
-  "trained_on": 3123,
-  "holdout": 625,
-  "base_log_loss": 0.69705,
-  "learned_log_loss": 0.69473,
+  "trained_on": 3149,
+  "holdout": 630,
+  "base_log_loss": 0.69563,
+  "learned_log_loss": 0.69375,
   "coin_log_loss": 0.69315,
-  "live_log_loss": 0.69705,
+  "live_log_loss": 0.69563,
   "gate": "failed",
-  "reason": "New weights didn't clearly beat a coin flip and the live model on the newest 625 picks (gain vs coin -0.0016 against margin 0.0066; vs live +0.0023 against 0.0042), so learning is off and picks come from the base model.",
+  "reason": "New weights didn't clearly beat a coin flip and the live model on the newest 630 picks (gain vs coin -0.0006 against margin 0.0066; vs live +0.0019 against 0.0041), so learning is off and picks come from the base model.",
   "weights": {
    "edge": 0.0,
    "stats_edge": 0.0,
@@ -34654,6 +34940,6 @@
    "listed": 0.0
   },
   "bias": 0.0,
-  "updated": "2026-11-23T22:00:01+00:00"
+  "updated": "2026-11-24T20:37:05+00:00"
  }
 }
