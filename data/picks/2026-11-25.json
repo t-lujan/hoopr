@@ -51,7 +51,14 @@
   "recorded_at": "2026-11-25T04:34:11+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 17.0,
+   "min": 35.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909317|4278053",
@@ -105,7 +112,14 @@
   "recorded_at": "2026-11-25T04:34:11+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 20.0,
+   "min": 40.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909317|3032977",
@@ -159,7 +173,14 @@
   "recorded_at": "2026-11-25T04:34:11+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 32.0,
+   "min": 36.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909317|3917376",
@@ -213,7 +234,14 @@
   "recorded_at": "2026-11-25T04:34:11+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 6.0,
+   "min": 17.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909317|6475",
@@ -267,7 +295,14 @@
   "recorded_at": "2026-11-25T04:34:11+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 7.0,
+   "min": 31.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909317|1966",
@@ -321,7 +356,14 @@
   "recorded_at": "2026-11-25T04:34:11+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 25.0,
+   "min": 35.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909317|4601025",
@@ -375,7 +417,14 @@
   "recorded_at": "2026-11-25T04:34:11+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 28.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909317|4431678",
@@ -429,7 +478,14 @@
   "recorded_at": "2026-11-25T04:34:11+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 30.0,
+   "min": 37.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909317|5124612",
@@ -483,7 +539,14 @@
   "recorded_at": "2026-11-25T04:34:11+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 18.0,
+   "min": 36.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909318|4433287",
@@ -537,7 +600,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 35.0,
+   "min": 34.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909318|2990984",
@@ -591,7 +661,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 27.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909318|5060701",
@@ -645,7 +722,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 28.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909318|4395651",
@@ -699,7 +783,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 25.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909318|4432822",
@@ -753,7 +844,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 31.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909318|4871145",
@@ -807,7 +905,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 12.0,
+   "min": 34.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909318|4711294",
@@ -861,7 +966,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 24.0,
+   "min": 34.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909318|4433249",
@@ -915,7 +1027,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 14.0,
+   "min": 38.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909318|4396971",
@@ -969,7 +1088,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 18.0,
+   "min": 35.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909318|4278067",
@@ -1023,7 +1149,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 29.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909318|2583632",
@@ -1077,7 +1210,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 0.0,
+   "min": 23.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909318|4602025",
@@ -1131,7 +1271,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 5.0,
+   "min": 26.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909318|4395626",
@@ -1185,7 +1332,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 20.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909320|4900671",
@@ -1239,7 +1393,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 25.0,
+   "min": 31.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909320|2991350",
@@ -1293,7 +1454,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 26.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909319|6585",
@@ -1347,7 +1515,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 3.0,
+   "min": 9.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909320|4397002",
@@ -1401,7 +1576,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 16.0,
+   "min": 35.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909320|5241364",
@@ -1455,7 +1637,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 6.0,
+   "min": 24.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909320|4592492",
@@ -1509,7 +1698,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 17.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909319|3908809",
@@ -1563,7 +1759,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 30.0,
+   "min": 34.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909320|4222252",
@@ -1617,7 +1820,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 31.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909320|4431671",
@@ -1671,7 +1881,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 32.0,
+   "min": 37.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909319|3934672",
@@ -1725,7 +1942,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 19.0,
+   "min": 36.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909319|3992",
@@ -1779,7 +2003,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 28.0,
+   "min": 36.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909320|4683778",
@@ -1833,7 +2064,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 28.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909319|4066328",
@@ -1887,7 +2125,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 32.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909320|4433247",
@@ -1941,7 +2186,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 7.0,
+   "min": 32.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909319|3062679",
@@ -1995,7 +2247,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 36.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909319|3136195",
@@ -2049,7 +2308,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 12.0,
+   "min": 33.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909320|3133626",
@@ -2103,7 +2369,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 25.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909320|4432816",
@@ -2157,7 +2430,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 19.0,
+   "min": 29.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909319|3914044",
@@ -2211,7 +2491,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 30.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909319|5041951",
@@ -2265,7 +2552,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 16.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909319|3147657",
@@ -2319,7 +2613,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 19.0,
+   "min": 37.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909319|4576087",
@@ -2373,7 +2674,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 27.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909320|3032976",
@@ -2427,7 +2735,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 32.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909319|4066757",
@@ -2481,7 +2796,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 5.0,
+   "min": 24.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909320|4278073",
@@ -2535,7 +2857,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 32.0,
+   "min": 37.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909320|4432847",
@@ -2589,7 +2918,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 20.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909320|3136196",
@@ -2643,7 +2979,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 9.0,
+   "min": 23.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909319|5023693",
@@ -2697,7 +3040,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 2.0,
+   "min": 16.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909321|3913176",
@@ -2751,7 +3101,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 18.0,
+   "min": 26.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909322|5082206",
@@ -2805,7 +3162,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 3.0,
+   "min": 22.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909321|3448",
@@ -2859,7 +3223,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 6.0,
+   "min": 18.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909321|4433083",
@@ -2913,7 +3284,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 16.0,
+   "min": 24.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909321|4903027",
@@ -2967,7 +3345,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 14.0,
+   "min": 26.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909322|5107173",
@@ -3021,7 +3406,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 5.0,
+   "min": 19.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909321|4396907",
@@ -3075,7 +3467,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 12.0,
+   "min": 29.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909322|4432194",
@@ -3129,7 +3528,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 31.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909321|3936099",
@@ -3183,7 +3589,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 4.0,
+   "min": 23.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909322|5175643",
@@ -3237,7 +3650,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 25.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909321|4432810",
@@ -3291,7 +3711,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 14.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909322|4432848",
@@ -3345,7 +3772,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 21.0,
+   "min": 35.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909321|5112087",
@@ -3399,7 +3833,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 19.0,
+   "min": 27.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909322|3064514",
@@ -3453,7 +3894,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 28.0,
+   "min": 39.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909322|5105623",
@@ -3507,7 +3955,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 22.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909321|4594326",
@@ -3561,7 +4016,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 32.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909322|3134907",
@@ -3615,7 +4077,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 31.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909321|4065778",
@@ -3669,7 +4138,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 0.0,
+   "min": 21.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909322|4278104",
@@ -3723,7 +4199,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 12.0,
+   "min": 34.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909322|5101761",
@@ -3777,7 +4260,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 6.0,
+   "min": 23.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909322|3133628",
@@ -3831,7 +4321,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 3.0,
+   "min": 26.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909322|5164559",
@@ -3885,7 +4382,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 21.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909322|4712896",
@@ -3939,7 +4443,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 17.0,
+   "min": 27.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909321|4066648",
@@ -3993,7 +4504,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 14.0,
+   "min": 37.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909322|4591725",
@@ -4047,7 +4565,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 2.0,
+   "min": 19.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909321|4684806",
@@ -4101,7 +4626,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 5.0,
+   "min": 25.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909321|4065733",
@@ -4155,7 +4687,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 17.0,
+   "min": 25.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909322|4395725",
@@ -4209,7 +4748,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 28.0,
+   "min": 37.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909321|4600663",
@@ -4263,7 +4809,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 7.0,
+   "min": 9.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909323|4871144",
@@ -4317,7 +4870,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 23.0,
+   "min": 32.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909323|4684740",
@@ -4371,7 +4931,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 18.0,
+   "min": 36.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909323|4278585",
@@ -4425,7 +4992,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 5.0,
+   "min": 22.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909323|3136193",
@@ -4479,7 +5053,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 25.0,
+   "min": 36.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909323|3155526",
@@ -4533,7 +5114,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 12.0,
+   "min": 31.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909323|2991230",
@@ -4587,7 +5175,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 34.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909323|4432639",
@@ -4641,7 +5236,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 32.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909323|4437244",
@@ -4695,7 +5297,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 16.0,
+   "min": 35.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909323|3202",
@@ -4749,7 +5358,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 20.0,
+   "min": 33.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909323|5203685",
@@ -4803,7 +5419,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 12.0,
+   "min": 25.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909323|2990992",
@@ -4857,7 +5480,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 4.0,
+   "min": 18.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909323|4066383",
@@ -4911,7 +5541,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 2.0,
+   "min": 25.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909323|4601023",
@@ -4965,7 +5602,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 20.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909323|4711272",
@@ -5019,7 +5663,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 7.0,
+   "min": 15.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909323|4433192",
@@ -5073,7 +5724,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 7.0,
+   "min": 15.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909324|4709138",
@@ -5127,7 +5785,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 13.0,
+   "min": 32.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909324|4397886",
@@ -5181,7 +5846,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 22.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909325|6606",
@@ -5235,7 +5907,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 29.0,
+   "min": 34.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909324|5142620",
@@ -5289,7 +5968,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 22.0,
+   "min": 37.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909325|4066259",
@@ -5343,7 +6029,10 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "void",
+   "reason": "did not play"
+  }
  },
  {
   "id": "401909324|4065732",
@@ -5397,7 +6086,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 39.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909324|4066436",
@@ -5451,7 +6147,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 24.0,
+   "min": 27.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909325|4683021",
@@ -5505,7 +6208,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 33.0,
+   "min": 36.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909325|4395630",
@@ -5559,7 +6269,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 18.0,
+   "min": 38.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909324|3155942",
@@ -5613,7 +6330,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 27.0,
+   "min": 37.0,
+   "outcome": "over",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909325|5105565",
@@ -5667,7 +6391,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 5.0,
+   "min": 21.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909324|6589",
@@ -5721,7 +6452,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 6.0,
+   "min": 26.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909325|3995",
@@ -5775,7 +6513,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 32.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909325|4592479",
@@ -5829,7 +6574,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 11.0,
+   "min": 37.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909324|4594327",
@@ -5883,7 +6635,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 18.0,
+   "min": 42.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909325|4395723",
@@ -5937,7 +6696,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 3.0,
+   "min": 33.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909324|4066262",
@@ -5991,7 +6757,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 5.0,
+   "min": 13.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909325|4683678",
@@ -6045,7 +6818,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 10.0,
+   "min": 23.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  },
  {
   "id": "401909325|5081727",
@@ -6099,7 +6879,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 16.0,
+   "min": 30.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909325|4845367",
@@ -6153,7 +6940,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 20.0,
+   "min": 34.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909325|4431736",
@@ -6207,7 +7001,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 8.0,
+   "min": 31.0,
+   "outcome": "under",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909325|5104157",
@@ -6261,7 +7062,14 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 44.0,
+   "min": 35.0,
+   "outcome": "over",
+   "won": false,
+   "base_won": false
+  }
  },
  {
   "id": "401909324|5175737",
@@ -6315,6 +7123,13 @@
   "recorded_at": "2026-11-25T23:46:07+00:00",
   "source": "live",
   "version": 2,
-  "result": null
+  "result": {
+   "status": "graded",
+   "pts": 15.0,
+   "min": 31.0,
+   "outcome": "under",
+   "won": true,
+   "base_won": true
+  }
  }
 ]
